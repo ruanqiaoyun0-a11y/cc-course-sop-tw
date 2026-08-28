@@ -255,7 +255,11 @@ body {
   .rp-actions { flex-direction: column; }
   .rp-actions .btn { width: 100%; }
   .final-task-input { min-height: 120px; font-size: 13px; padding: 12px; }
-  .section-nav-buttons { flex-direction: column; gap: 10px; position: sticky; bottom: 0; background: var(--bg); padding: 12px 0; margin-top: 24px; }
+  .drill-container { padding-bottom: 24px; }
+  .drill-container #drillChatArea { max-height: 320px; }
+  .drill-container #drillInputRow { padding-bottom: 16px; }
+  .drill-container #drillInput { font-size: 16px !important; } /* 防止移动端点击输入框自动缩放 */
+  .section-nav-buttons { flex-direction: column; gap: 10px; position: sticky; bottom: 0; background: var(--bg); padding: 12px 0; margin-top: 24px; z-index: 50; box-shadow: 0 -2px 8px rgba(0,0,0,0.06); }
   .section-nav-buttons .btn { width: 100%; text-align: center; padding: 14px 24px; font-size: 15px; }
   .section-nav-buttons > div { width: 100%; }
   .notes-toggle { display: none; }
@@ -1783,7 +1787,7 @@ function drillIsPassed() {
 // 渲染练习区 HTML
 function renderDrillHTML() {
   return `
-    <div class="card" style="border-top:4px solid var(--accent);">
+    <div class="card drill-container" style="border-top:4px solid var(--accent);">
       <h2 style="margin-bottom:8px;">🎮 实战演练：开场白 + 五大拒绝理由</h2>
       <p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">按顺序完成 6 关，每关 ≥${DRILL_PASS_SCORE} 分通过；全部通过后提交综合考核评分（综合 ≥${DRILL_PASS_SCORE} 分解锁下一章）。</p>
       <div id="drillProgress" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;"></div>
@@ -1871,16 +1875,24 @@ async function startDrillScene() {
   const scene = drillScenes[drillCurrentScene];
   drillExchangeCount = 0;
   drillConversation = [];
+  // 提前启用输入框与切换按钮（即便后续异常也不阻塞用户）
+  const input0 = document.getElementById('drillInput');
+  if (input0) { input0.disabled = false; input0.value = ''; input0.placeholder = '输入你的话...（Ctrl+Enter 发送）'; }
+  const startBtn0 = document.getElementById('drillStartBtn');
+  if (startBtn0) startBtn0.style.display = 'none';
+  const sendBtn0 = document.getElementById('drillSendBtn');
+  if (sendBtn0) sendBtn0.style.display = '';
+  const endBtn0 = document.getElementById('drillEndBtn');
+  if (endBtn0) endBtn0.style.display = '';
+  // 显示 AI 家长开场白（必须）
   const chat = document.getElementById('drillChatArea');
-  if (!chat) return;
-  chat.innerHTML = `<div class="rp-history-item parent">👩 AI 家长：${scene.openingLine}</div>`;
+  if (chat) {
+    chat.innerHTML = `<div class="rp-history-item parent">👩 AI 家长：${scene.openingLine}</div>`;
+    chat.scrollTop = chat.scrollHeight;
+  }
   drillConversation.push({ role: 'parent', content: scene.openingLine });
-  const input = document.getElementById('drillInput');
-  if (input) { input.disabled = false; input.value = ''; input.placeholder = '输入你的话...（Ctrl+Enter 发送）'; }
-  document.getElementById('drillStartBtn').style.display = 'none';
-  document.getElementById('drillSendBtn').style.display = '';
-  document.getElementById('drillEndBtn').style.display = '';
-  if (input) input.focus();
+  // 自动聚焦输入框（用 setTimeout 避免某些浏览器阻止 focus）
+  if (input0) setTimeout(() => { input0.focus(); }, 50);
   if (typeof showToast === 'function') showToast('📞 练习开始！请完成「' + scene.label + '」', 'success');
 }
 
