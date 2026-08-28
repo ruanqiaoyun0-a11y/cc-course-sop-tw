@@ -1910,6 +1910,15 @@ async function submitDrillMessage() {
   drillExchangeCount++;
   const typing = document.getElementById('drillTyping');
   if (typing) typing.style.display = 'flex';
+  // 发送按钮实时计时，让用户知道 AI 正在回复（而非卡住）
+  const sendBtn = document.getElementById('drillSendBtn');
+  const sendStart = Date.now();
+  let sendTimer = setInterval(() => {
+    if (sendBtn && sendBtn.disabled) {
+      const el = Math.floor((Date.now() - sendStart) / 1000);
+      sendBtn.textContent = `等待 AI 回复... (${el}s)`;
+    } else { clearInterval(sendTimer); }
+  }, 1000);
   let parentReply = '好的，请继续。';
   let aiUsed = false;
   try {
@@ -1932,7 +1941,9 @@ async function submitDrillMessage() {
     if (typing) typing.style.display = 'none';
     input.value = '';
     input.disabled = false;
+    if (sendBtn) { sendBtn.textContent = '发送消息'; sendBtn.disabled = false; }
     input.focus();
+    clearInterval(sendTimer);
   }
 }
 
@@ -1956,7 +1967,7 @@ CC 刚刚讲的是：「${userText.substring(0, 100)}${userText.length > 100 ? '
 - **内容奇怪、乱码、数字串、或明显无意义 → 必须表示困惑：「你说什么？」「我不是很懂你的意思」**
 - **绝对不要讲「明白」「哦，知道了」之类敷衍对方**
 绝对不要背预设台词！只输出一句话回应。` });
-  const data = await callDeepSeek({ messages, model: DEEPSEEK_MODEL, max_tokens: 120, temperature: 0.3 });
+  const data = await callDeepSeek({ messages, model: DEEPSEEK_MODEL, max_tokens: 120, temperature: 0.3 }, 15000);
   let reply = data.choices?.[0]?.message?.content?.trim();
   if (!reply) throw new Error('AI 回应为空');
   reply = reply.replace(/^["「『]|["」』]$/g, '').trim();
@@ -1970,18 +1981,32 @@ async function endDrillScene() {
     return;
   }
   const endBtn = document.getElementById('drillEndBtn');
-  if (endBtn) { endBtn.disabled = true; endBtn.textContent = '⏳ AI 评分中...'; }
   const sendBtn = document.getElementById('drillSendBtn');
-  if (sendBtn) sendBtn.disabled = true;
   const input = document.getElementById('drillInput');
+  if (endBtn) { endBtn.disabled = true; endBtn.textContent = '⏳ AI 评分中... (0s)'; }
+  if (sendBtn) sendBtn.disabled = true;
   if (input) input.disabled = true;
+
+  // 实时计时器：让用户看到等待时长（防止以为卡死）
+  const startTime = Date.now();
+  let timerInterval = setInterval(() => {
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    if (endBtn && endBtn.disabled) {
+      endBtn.textContent = `⏳ AI 评分中... (${elapsed}s)`;
+    } else {
+      clearInterval(timerInterval);
+    }
+  }, 1000);
+
   try { await evaluateDrillScene(); }
   catch (err) {
     console.error('评分失败:', err);
-    if (typeof showToast === 'function') showToast('❌ AI 评分失败：' + err.message + '，请重试', 'error');
+    if (typeof showToast === 'function') showToast('❌ AI 评分失败：' + err.message + '，请点「重做本关」重试', 'error');
     if (endBtn) { endBtn.disabled = false; endBtn.textContent = '🏁 结束本关 & 评分'; }
     if (sendBtn) sendBtn.disabled = false;
     if (input) input.disabled = false;
+  } finally {
+    clearInterval(timerInterval);
   }
 }
 
@@ -1993,7 +2018,14 @@ async function evaluateDrillScene() {
     { role: 'system', content: scene.evaluatorSystemPrompt },
     { role: 'user', content: `以下是学员在本场景的对话记录，请进行评分：\n\n${conversationText}\n\n共 ${drillExchangeCount} 轮对话。` }
   ];
-  const data = await callDeepSeek({ messages: evalMessages, model: DEEPSEEK_MODEL, max_tokens: 500, temperature: 0.3 });
+  let data;
+  try {
+    // 18 秒超时：避免长时间等待，更快失败反馈
+    data = await callDeepSeek({ messages: evalMessages, model: DEEPSEEK_MODEL, max_tokens: 500, temperature: 0.3 }, 18000);
+  } catch (err) {
+    console.error('AI 评分请求失败:', err);
+    throw err; // 抛到 endDrillScene 的 catch，由那里恢复 UI
+  }
   const rawText = data.choices?.[0]?.message?.content?.trim() || '';
   let result;
   try {
