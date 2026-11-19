@@ -512,10 +512,14 @@ const roleplayConfig = {
    - 每个核心话题都有触及才算覆盖
 
 【评分规则】
-- 60分为及格线
+- 60分为及格线。这是新人培训考核，评分以鼓励为主、严格为辅
+- 分数锚点（必须遵守）：
+  · 完成全部核心环节（开场白→提问授权→异议处理→挖需→推荐试听→确认收尾），沟通自然顺畅、话术基本到位 → 75-90分
+  · 完成大部分核心环节，有明显小瑕疵（个别环节简略、顺序小乱） → 60-75分
+  · 缺失多个核心环节、或严重偏离流程、或对话明显敷衍 → 60分以下
 - 对话质量 > 对话长度，不是讲得越多分越高
 - 不要因为对话短就自动给低分（最少6轮正常对话就应该有基础分）
-- 识别关键词而非字面对照
+- 识别关键词而非字面对照（意思表达到位即可，不要求逐字复述话术）
 - 具体指出优点和改进方向
 
 【输出格式要求 — 极其严格】
@@ -904,7 +908,12 @@ function markComplete(index) {
 function tryCompleteCourse(index) {
   if (!finalTaskSubmitted) { showToast('请先完成终极考核并提交答案', 'warning'); return; }
   if (finalScore < 60) { showToast('终极考核得分未达60分（当前'+finalScore+'分），请重新作答', 'warning'); return; }
+  // 能进入第7章说明前面章节都已通过——统一补齐完成标记，避免侧边栏跳章导致证书条件静默失败
+  for (let i = 0; i <= index; i++) completedSections.add(i);
   markComplete(index);
+  if (!checkCertificate()) {
+    showToast('✅ 课程已完成！若证书未弹出，点击右上角「结业证书」即可查看', 'success');
+  }
 }
 function updateProgress() {
   const total = courseData.sections.length;
@@ -1718,6 +1727,7 @@ function loadProgress() {
 // Certificate
 function checkCertificate() {
   const allDone = completedSections.size >= courseData.sections.length && finalTaskSubmitted && finalScore >= 60;
+  if (!allDone) return false;
   if (allDone) {
     setTimeout(() => {
       showToast('🏆 恭喜完成全部课程！点击领取结业证书', 'success');
@@ -1728,6 +1738,7 @@ function checkCertificate() {
       document.getElementById('certOverlay').style.display = 'flex';
     }, 1000);
   }
+  return allDone;
 }
 function closeCertificate() { document.getElementById('certOverlay').style.display = 'none'; }
 function printCertificate() {
