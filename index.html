@@ -614,15 +614,15 @@ async function checkBackendHealth() {
     return deepseekAvailable;
   }
   try {
-    const data = await callDeepSeek({
-      model: DEEPSEEK_MODEL,
+    const data = await callMiMo({
+      model: MIMO_MODEL,
       messages: [{ role: 'user', content: 'ping' }],
-      max_tokens: 1,
+      max_tokens: 20,
       temperature: 0
-    });
+    }, 15000);
     deepseekAvailable = !!(data && data.choices);
   } catch (e) {
-    console.warn('DeepSeek 健康檢查失敗:', e.message);
+    console.warn('MiMo 健康檢查失敗:', e.message);
     deepseekAvailable = false;
   }
   deepseekCheckedAt = Date.now();
@@ -639,7 +639,8 @@ function _rK2() {
   return o;
 }
 const MIMO_API_URL = 'https://api.xiaomimimo.com/v1/chat/completions';
-const MIMO_MODEL = 'mimo-v2.5-pro';
+const MIMO_MODEL = 'mimo-v2.6-flash';        // 2026-11 更新：v2.5-pro 已下线，实测 v2.6-flash 正常
+const MIMO_MODEL_EVAL = 'mimo-v2.6-pro';     // 综合评分用（更稳的模型，JSON输出实测正常）
 
 // OpenAI 兼容客户端（轻量 fetch 封装，模拟 client.chat.completions.create）
 function createOpenAIClient({ apiKey, baseURL }) {
@@ -1189,8 +1190,9 @@ ${conversationText}
   ];
 
   const data = await callMiMo({
+    model: MIMO_MODEL_EVAL,
     messages: evalMessages,
-    max_tokens: 500,
+    max_tokens: 800,
     temperature: 0.3,
     response_format: { type: 'json_object' }
   });
