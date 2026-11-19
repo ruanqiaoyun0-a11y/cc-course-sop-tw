@@ -344,8 +344,8 @@ body {
 // ============================================================
 const courseData = { title: 'CC课前课中SOP · 台湾版', sections: [
   { id:'s1', title:'CC角色与课前准备', duration:'8-10分钟', icon:'1', type:'content_quiz', quizId:'quiz1', content:`<div class="section-header"><span class="section-badge">第1章</span><h1>CC角色认知与课前准备</h1><p class="duration">⏱ 学习时长：8-10分钟 | 📝 含5道测验题</p></div><div class="card"><h2>🎯 CC角色定位</h2><p>CC（Course Consultant / 课程顾问）是连接<strong>家长</strong>与<strong>优质课程</strong>的桥梁。你的核心任务不是「卖课」，而是帮助家长发现孩子的学习需求，并提供合适的解决方案。</p><div class="strategy-grid"><div class="strategy-card"><div class="icon">🎓</div><h4>教育顾问</h4><p>专业诊断学习问题</p></div><div class="strategy-card"><div class="icon">🤝</div><h4>信任桥梁</h4><p>建立家长信任</p></div><div class="strategy-card"><div class="icon">📋</div><h4>资源匹配师</h4><p>精准推荐合适课程</p></div><div class="strategy-card"><div class="icon">📈</div><h4>成长伙伴</h4><p>持续跟进孩子进步</p></div></div></div><div class="card"><h2>📞 课前电话的四大目的</h2><div class="step-list"><div class="step-item"><div class="step-num-big">1</div><div class="step-content"><h4>约课</h4><p>成功安排试听课时间，这是最基本的转化节点</p></div></div><div class="step-item"><div class="step-num-big">2</div><div class="step-content"><h4>挖需</h4><p>深入了解孩子学习现状与家长期待，找出痛点与需求</p></div></div><div class="step-item"><div class="step-num-big">3</div><div class="step-content"><h4>建立良好的关系</h4><p>让家长感受到你的真诚与专业，适当介绍产品，为后续转化打下信任基础</p></div></div><div class="step-item"><div class="step-num-big">4</div><div class="step-content"><h4>添加 Line</h4><p>建立私域连接，确保课后能持续触达和跟进</p></div></div></div></div><div class="card"><h2>💬 三种提问方式</h2><p style="color:var(--text-secondary);margin-bottom:16px;">打电话的过程中，提问方式决定了信息获取的质量，记住这三种提问方式：</p><div class="strategy-grid"><div class="strategy-card"><div class="icon">🔓</div><h4>开放式提问</h4><p>「小朋友数学学习上遇到过什么困难呀？」→ 获取更多信息</p></div><div class="strategy-card"><div class="icon">🔒</div><h4>封闭式提问</h4><p>「小朋友现在上国小一年级，对吗？」→ 确认具体信息</p></div><div class="strategy-card"><div class="icon">🎯</div><h4>选择式提问</h4><p>「您看明天下午还是晚上方便试听？」→ 引导家长做选择</p></div></div></div><div class="card"><h2>📋 课前首通电话流程总览</h2><div class="flow-steps"><div class="flow-step"><div class="step-num">1</div><h4>开场白</h4><p>表明身份+来电目的</p></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">2</div><h4>异议处理</h4><p>化解家长顾虑</p></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">3</div><h4>挖需四步</h4><p>深入挖掘需求</p></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">4</div><h4>推荐试听</h4><p>匹配合适等级</p></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">5</div><h4>约课收尾</h4><p>确认+发送资料</p></div></div><div class="tips-box"><strong>💡 贯穿始终：</strong>心态要稳，你是来帮助家长解决问题的顾问，不是推销员。</div></div>` },
-  { id:'s2', title:'开场白与异议处理', duration:'10-12分钟', icon:'2', type:'content_quiz', quizId:'quiz2', content:`<div class="section-header"><span class="section-badge">第2章</span><h1>开场白与异议处理</h1><p class="duration">⏱ 学习时长：10-12分钟 | 📝 含5道测验题</p></div><div class="card"><h2>🗣️ 标准开场白</h2><div class="highlight-box"><strong>三步法：</strong>表明身份 → 告知来电目的 → 让客户感觉有帮助</div><div class="chat-scene"><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">妈妈您好，我是VIP THINK的X老师，有看到您透过XX的链接给小朋友预约了我们的数学思维试听课，我是专门负责对接的顾问老师，为了给孩子安排最合适的老师和课件，想了解下孩子的基本情况，您现在方便吗？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">💡 关键动作：表明获取联系方式的渠道，拉近距离</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">为了给小朋友安排一节难度合适的数学课，让小朋友有一个更好的上课体验，想跟您了解一下小朋友的情况……</div></div></div></div></div><div class="card"><h2>🔑 提问授权的三大目的</h2><div class="strategy-grid"><div class="strategy-card"><div class="icon">🛡️</div><h4>增加安全感</h4><p>让家长明白你是来帮忙的，不是来推销的</p></div><div class="strategy-card"><div class="icon">🤝</div><h4>增加信任度</h4><p>展示专业性和对孩子的关注</p></div><div class="strategy-card"><div class="icon">🔍</div><h4>为挖需做好铺垫</h4><p>自然地过渡到挖掘需求阶段</p></div></div></div><div class="card"><h2>🚫 五大拒绝理由及应对话术</h2><p style="color:var(--text-secondary);margin-bottom:16px;">面对拒绝时，不要退缩——给家长一个<strong>试听的理由</strong>。记住口诀：<span class="highlight">理解 → 价值 → 引导 → 坚持，不展开</span></p><div class="tab-wrap"><button class="tab-btn active" onclick="switchTab(this,'reason1')">没时间</button><button class="tab-btn" onclick="switchTab(this,'reason2')">小朋友不喜欢</button><button class="tab-btn" onclick="switchTab(this,'reason3')">报其他班了</button><button class="tab-btn" onclick="switchTab(this,'reason4')">没有领课/免费担心</button><button class="tab-btn" onclick="switchTab(this,'reason5')">其他理由</button></div><div class="tab-panel active" id="reason1"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我们最近太忙了，没时间上试听课呀……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">特别能理解，所以才安排在线上上课，就是为了节约小朋友的时间，高效学习。课程时间只需要<strong>40分钟</strong>，您看明天X点或者X点哪个时间方便？给小朋友安排个好老师。</div></div></div></div><div class="tips-box"><strong>要点：</strong>强调线上便利性 + 只需40分钟 + 二选一引导</div></div><div class="tab-panel" id="reason2"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我家小朋友不喜欢数学，试了也没用的……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">可以理解，相信您之前申请试听也是想培养下小朋友的兴趣，但这肯定需要一个过程。咱们先帮他迈开第一步，我安排一个<strong>引导性较强的老师</strong>让他先感受下，您看我们安排在明天的X点或者X点可以吧？</div></div></div></div><div class="tips-box"><strong>要点：</strong>理解家长 + 回顾初心 + 强调引导型老师 + 二选一</div></div><div class="tab-panel" id="reason3"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我们已经报了其他数学班了，暂时不考虑了……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">明白！不过我们这节课是<strong>免费</strong>的，数学难度逐步加大，108课纲重视核心素养培养，我们的课程贴合108课纲的难度和要求，还有思维拓展方面的训练，可以让小朋友试一试，就当是检验一下目前的学习效果，您看明天下午还是晚上方便试听？</div></div></div></div><div class="tips-box"><strong>要点：</strong>强调免费 + 贴合108课纲 + 思维拓展 + 检验效果</div></div><div class="tab-panel" id="reason4"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">免费的会不会质量不行啊？/ 我没领过这个课……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">这个没关系，我们这节课<strong>不仅是一节试听课，也是一节测评课</strong>。我们的老师都是非常优秀的老师，可以对小朋友的数学水平进行一个<strong>全方位评估</strong>，您也可以正好检验一下小朋友目前的学习效果。您看帮小朋友安排在明天的X点或者X点测试一下？</div></div></div></div><div class="tips-box"><strong>要点：</strong>试听课=测评课 + 优秀老师 + 全方位评估 + 检验效果</div></div><div class="tab-panel" id="reason5"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我再考虑一下 / 我回去跟家人商量……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">理解理解～不过体验一次又不花钱，试了才知道适不适合。先帮小朋友排一节课，体验完了您再和家人商量也更有依据呀！明后天哪个时间段比较方便呢？</div></div></div></div><div class="tips-box"><strong>要点：</strong>不施压 + 零成本体验 + 体验后更有依据 + 轻松引导</div></div></div><div class="card" style="border-top:4px solid var(--accent);"><h2>🤖 AI 对话模拟练习</h2><p style="line-height:1.8;">学完以上话术后，进入<strong>实战演练</strong>：你将以课程顾问（CC）身份，与AI家长进行<strong>6 个场景</strong>的对话模拟——开场白 + 五大拒绝理由逐一演练。</p><div class="step-list"><div class="step-item"><div class="step-num-big">1</div><div class="step-content"><h4>练习流程</h4><p>第1关：开场白 → 第2~6关：五大拒绝理由（没时间 / 小朋友不喜欢 / 报其他班了 / 没有领课 / 其他理由），<strong>逐关解锁</strong>，每关清晰标注当前拒绝理由。</p></div></div><div class="step-item"><div class="step-num-big">2</div><div class="step-content"><h4>评分规则</h4><p>每关结束即评分，<strong>≥70分</strong>本关通过；全部 6 关通过后，提交对话记录进行<strong>综合考核评分</strong>，综合 <strong>≥70分</strong> 才算完成本章 AI 练习。</p></div></div><div class="step-item"><div class="step-num-big">3</div><div class="step-content"><h4>解锁条件</h4><p>第3章解锁需<strong>同时满足</strong>：本章选择题全部答对 AND AI对话模拟综合考核 ≥70分。未达标可重做任一场景直至通过。</p></div></div></div><div class="highlight-box"><strong>🎯 目标：</strong>把「理解 → 价值 → 引导 → 坚持，不展开」练成肌肉记忆。</div></div><div id="drillContainer"></div>` },
-  { id:'s3', title:'挖需四步法', duration:'8-10分钟', icon:'3', type:'content_quiz', quizId:'quiz3', content:`<div class="section-header"><span class="section-badge">第3章</span><h1>挖需四步法</h1><p class="duration">⏱ 学习时长：8-10分钟 | 📝 含5道测验题</p></div><div class="card"><h2>🧠 什么是挖需？</h2><div style="text-align:center;padding:20px 0;"><div style="font-size:48px;margin-bottom:8px;">🎯</div><div style="font-size:20px;font-weight:700;color:var(--primary-dark);margin-bottom:8px;">需求 = 现状 和 对未来的期待 之间的距离</div><div style="font-size:15px;color:var(--text-secondary);">「有需求 → 扩大需求」&nbsp;&nbsp;|&nbsp;&nbsp;「没有需求 → 创造需求」</div></div><div class="highlight-box warning">⚠️ 重要原则：没有挖到需求之前，不要报价、不要抛优惠！</div></div><div class="card"><h2>🎯 挖需的目的：塑造销售三性</h2><div class="strategy-grid"><div class="strategy-card" style="border:2px solid var(--primary);"><div class="icon">📐</div><h4>必要性</h4><p>决定了数学是不是要报班学</p></div><div class="strategy-card" style="border:2px solid var(--primary);"><div class="icon">🏫</div><h4>唯一性</h4><p>决定了是不是要在这里学</p></div><div class="strategy-card" style="border:2px solid var(--primary);"><div class="icon">⏰</div><h4>紧迫性</h4><p>决定了是不是要现在开始学</p></div></div></div><div class="card"><h2>📊 挖需四步流程</h2><div class="flow-steps" style="margin-bottom:24px;"><div class="flow-step"><div class="step-num">①</div><h4>基本信息确认</h4></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">②</div><h4>学习经历情况</h4></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">③</div><h4>支付能力</h4></div><div class="flow-arrow">→</div><div class="flow-step"><div class="step-num">④</div><h4>学习动机</h4></div></div><div class="step-list"><div class="step-item"><div class="step-num-big">①</div><div class="step-content"><h4>基本信息确认</h4><p>确认孩子姓名、年龄、年级（幼稚园大班 / 国小X年级）、性格，注意用轻松的语气自然过渡。</p><div class="script-tpl">"我简单和您确认一下小朋友的基本信息，小朋友的名字叫<span class="var">XX</span>对吗？今年是<span class="var">X岁</span>，上<span class="var">幼稚园大班/国小X年级</span>对吗？小朋友性格是比较活泼还是比较慢热呀？"</div></div></div><div class="step-item"><div class="step-num-big">②</div><div class="step-content"><h4>学习经历和情况</h4><p>了解孩子之前是否学过数学思维、校内数学成绩如何、有没有参加竞赛。挖掘孩子的强项和薄弱点。</p><div class="script-tpl">"小朋友之前有没有上过数学相关的课程呀？""校内数学成绩怎么样？""数学方面有没有感觉特别吃力的地方？"</div></div></div><div class="step-item"><div class="step-num-big">③</div><div class="step-content"><h4>支付能力判断</h4><p>通过了解家庭对教育投入的态度、报班预算等，判断家长的支付意愿和能力。<strong>注意：不要直接问收入！</strong></p><div class="script-tpl"><strong>技巧：</strong>通过「之前报过什么班？」「读的是双语学校还是一般学校？」等间接问题判断</div></div></div><div class="step-item"><div class="step-num-big">④</div><div class="step-content"><h4>学习动机挖掘</h4><p>了解家长想让小朋友学数学的深层动机，是否有明确目标（升学/竞赛/培养思维）。<strong>这一步直接为后续关单做铺垫！</strong></p><div class="script-tpl">"您觉得小朋友学数学主要是为了什么呢？是学校考试需要，还是想培养一下思维能力？""有没有考虑过以后参加数学竞赛？"</div></div></div></div></div><div class="card"><h2>🌱 学习动机引导：分阶段话术</h2><p style="color:var(--text-secondary);margin-bottom:16px;">根据小朋友的年龄阶段，用对应的话术把家长的期待引向我们的课程价值：</p><h3 style="font-size:15px;font-weight:700;margin-bottom:10px;">🏫 幼儿阶段（幼稚园）</h3><div class="step-list"><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>想培养专注力？</strong> → 我们互动密集，动画+闯关式练习，全程抓住注意力</p></div></div><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>想培养逻辑思维？</strong> → 从分类、排序、规律、推理等底层能力入手</p></div></div><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>希望孩子对数学有兴趣？</strong> → 游戏化闯关，不知不觉喜欢上思考</p></div></div><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>为上国小做准备？</strong> → 提前打基础，上国小适应快、跟得上</p></div></div></div><h3 style="font-size:15px;font-weight:700;margin:16px 0 10px;">🎒 国小阶段</h3><div class="step-list"><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>成绩不理想？</strong> → 先能力定级，找到薄弱点，同步校内知识</p></div></div><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>应用题不会做？</strong> → 训练拆解题目、抓关键信息、按步骤推理</p></div></div><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>粗心计算慢？</strong> → 强调解题步骤与检查习惯</p></div></div><div class="step-item"><div style="width:8px;height:8px;border-radius:50%;background:var(--primary);margin-top:10px;flex-shrink:0;"></div><div class="step-content"><p><strong>想提升逻辑独立思考？</strong> → 不只教知识，更教思考方式</p></div></div></div></div><div class="card"><h2>🔑 挖需关键技巧</h2><div class="callout-grid"><div class="callout-item"><div style="font-size:28px;">👂</div><h4 style="margin:8px 0;">多听少说</h4><p>让家长说70%，你说30%</p></div><div class="callout-item"><div style="font-size:28px;">🔓</div><h4 style="margin:8px 0;">多用开放式提问</h4><p>获取更多信息，不引导答案</p></div><div class="callout-item"><div style="font-size:28px;">📝</div><h4 style="margin:8px 0;">记录关键信息</h4><p>为后续个性化推荐做准备</p></div><div class="callout-item"><div style="font-size:28px;">💰</div><h4 style="margin:8px 0;">先挖需再报价</h4><p>没挖到需求绝不报价</p></div></div></div>` },
+  { id:'s2', title:'开场白与异议处理', duration:'10-12分钟', icon:'2', type:'content_quiz', quizId:'quiz2', content:`<div class="section-header"><span class="section-badge">第2章</span><h1>开场白与异议处理</h1><p class="duration">⏱ 学习时长：10-12分钟 | 📝 含5道测验题</p></div><div class="card"><h2>🗣️ 标准开场白</h2><div class="highlight-box"><strong>三步法：</strong>表明身份 → 告知来电目的 → 让客户感觉有帮助</div><div class="chat-scene"><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">妈妈您好，我是VIP THINK的X老师，有看到您透过XX的链接给小朋友预约了我们的数学思维试听课，我是专门负责对接的顾问老师，为了给孩子安排最合适的老师和课件，想了解下孩子的基本情况，您现在方便吗？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">💡 关键动作：表明获取联系方式的渠道，拉近距离</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">为了给小朋友安排一节难度合适的数学课，让小朋友有一个更好的上课体验，想跟您了解一下小朋友的情况……</div></div></div></div></div><div class="card"><h2>🔑 提问授权的三大目的</h2><div class="strategy-grid"><div class="strategy-card"><div class="icon">🛡️</div><h4>增加安全感</h4><p>让家长明白你是来帮忙的，不是来推销的</p></div><div class="strategy-card"><div class="icon">🤝</div><h4>增加信任度</h4><p>展示专业性和对孩子的关注</p></div><div class="strategy-card"><div class="icon">🔍</div><h4>为挖需做好铺垫</h4><p>自然地过渡到挖掘需求阶段</p></div></div></div><div class="card"><h2>🚫 五大拒绝理由及应对话术</h2><p style="color:var(--text-secondary);margin-bottom:16px;">面对拒绝时，不要退缩——给家长一个<strong>试听的理由</strong>。记住口诀：<span class="highlight">理解 → 价值 → 引导 → 坚持，不展开</span></p><div class="tab-wrap"><button class="tab-btn active" onclick="switchTab(this,'reason1')">没时间</button><button class="tab-btn" onclick="switchTab(this,'reason2')">小朋友不喜欢</button><button class="tab-btn" onclick="switchTab(this,'reason3')">报其他班了</button><button class="tab-btn" onclick="switchTab(this,'reason4')">没有领课/免费担心</button><button class="tab-btn" onclick="switchTab(this,'reason5')">其他理由</button></div><div class="tab-panel active" id="reason1"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我们最近太忙了，没时间上试听课呀……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">特别能理解，所以才安排在线上上课，就是为了节约小朋友的时间，高效学习。课程时间只需要<strong>40分钟</strong>，您看明天X点或者X点哪个时间方便？给小朋友安排个好老师。</div></div></div></div><div class="tips-box"><strong>要点：</strong>强调线上便利性 + 只需40分钟 + 二选一引导</div></div><div class="tab-panel" id="reason2"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我家小朋友不喜欢数学，试了也没用的……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">可以理解，相信您之前申请试听也是想培养下小朋友的兴趣，但这肯定需要一个过程。咱们先帮他迈开第一步，我安排一个<strong>引导性较强的老师</strong>让他先感受下，您看我们安排在明天的X点或者X点可以吧？</div></div></div></div><div class="tips-box"><strong>要点：</strong>理解家长 + 回顾初心 + 强调引导型老师 + 二选一</div></div><div class="tab-panel" id="reason3"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我们已经报了其他数学班了，暂时不考虑了……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">明白！不过我们这节课是<strong>免费</strong>的，数学难度逐步加大，108课纲重视核心素养培养，我们的课程贴合108课纲的难度和要求，还有思维拓展方面的训练，可以让小朋友试一试，就当是检验一下目前的学习效果，您看明天下午还是晚上方便试听？</div></div></div></div><div class="tips-box"><strong>要点：</strong>强调免费 + 贴合108课纲 + 思维拓展 + 检验效果</div></div><div class="tab-panel" id="reason4"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">免费的会不会质量不行啊？/ 我没领过这个课……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">这个没关系，我们这节课<strong>不仅是一节试听课，也是一节测评课</strong>。我们的老师都是非常优秀的老师，可以对小朋友的数学水平进行一个<strong>全方位评估</strong>，您也可以正好检验一下小朋友目前的学习效果。您看帮小朋友安排在明天的X点或者X点测试一下？</div></div></div></div><div class="tips-box"><strong>要点：</strong>试听课=测评课 + 优秀老师 + 全方位评估 + 检验效果</div></div><div class="tab-panel" id="reason5"><div class="chat-scene"><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">我再考虑一下 / 我回去跟家人商量……</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">理解理解～不过体验一次又不花钱，试了才知道适不适合。先帮小朋友排一节课，体验完了您再和家人商量也更有依据呀！明后天哪个时间段比较方便呢？</div></div></div></div><div class="tips-box"><strong>要点：</strong>不施压 + 零成本体验 + 体验后更有依据 + 轻松引导</div></div></div><div class="card" style="border-top:4px solid var(--accent);"><h2>🎯 实战演练（离线点选模式）</h2><p style="line-height:1.8;">学完以上话术后，进入<strong>实战演练</strong>：你将以课程顾问（CC）身份，完成<strong>6 个场景</strong>的对话演练——开场白 + 五大拒绝理由逐一演练。<strong>全程离线可用，无需网络与AI。</strong></p><div class="step-list"><div class="step-item"><div class="step-num-big">1</div><div class="step-content"><h4>练习流程</h4><p>第1关：开场白 → 第2~6关：五大拒绝理由（没时间 / 小朋友不喜欢 / 报其他班了 / 没有领课 / 其他理由），<strong>逐关解锁</strong>。</p></div></div><div class="step-item"><div class="step-num-big">2</div><div class="step-content"><h4>玩法与评分</h4><p>每轮听家长说一句话，从候选话术中选出最合适的一句——<strong>首次选择计入得分</strong>，选错会看到原因并可以再选一次。每关 4 轮，<strong>≥70分</strong>本关通过。</p></div></div><div class="step-item"><div class="step-num-big">3</div><div class="step-content"><h4>解锁条件</h4><p>第3章解锁需<strong>同时满足</strong>：本章选择题全部答对 AND 演练综合考核（6关平均）≥70分。未达标可重做任一场景直至通过。</p></div></div></div><div class="highlight-box"><strong>🎯 目标：</strong>把「理解 → 价值 → 引导 → 坚持，不展开」练成肌肉记忆。</div></div><div id="drillContainer"></div>` },
+  { id:'s3', title:'挖需四步法', duration:'12-15分钟', icon:'3', type:'content_quiz', quizId:'quiz3', content:`<div class="section-header"><span class="section-badge">第3章</span><h1>挖需四步法</h1><p class="duration">⏱ 学习时长：12-15分钟 | 📝 含5道测验题</p></div><div class="card"><h2>🧠 什么是挖需？</h2><div style="text-align:center;padding:20px 0;"><div style="font-size:48px;margin-bottom:8px;">🎯</div><div style="font-size:20px;font-weight:700;color:var(--primary-dark);margin-bottom:8px;">需求 = 现状 和 对未来的期待 之间的距离</div><div style="font-size:15px;color:var(--text-secondary);">「有需求 → 扩大需求」&nbsp;&nbsp;|&nbsp;&nbsp;「没有需求 → 创造需求」</div><div style="font-size:14px;color:var(--text-secondary);margin-top:8px;">开放提问 ＞ 封闭提问：多问「怎么样、为什么」，少问「是不是、好不好」——家长答不上来时，换选择式帮他开口。</div></div><div class="highlight-box warning">⚠️ 铁律：没有挖到需求之前，不要报价、不要抛优惠！</div></div><div class="card"><h2>🎯 挖需的目的：塑造销售三性</h2><div class="strategy-grid"><div class="strategy-card" style="border:2px solid var(--primary);"><div class="icon">📐</div><h4>重要性（为什么学）</h4><p>决定了数学是不是要报班学——家长对数学启蒙／成绩的重视度和焦虑点</p></div><div class="strategy-card" style="border:2px solid var(--primary);"><div class="icon">🏫</div><h4>唯一性（为什么在这学）</h4><p>决定了是不是要在VIP THINK学——我们与线下班、AI录播课、其他机构的差异点</p></div><div class="strategy-card" style="border:2px solid var(--primary);"><div class="icon">⏰</div><h4>紧迫性（为什么现在学）</h4><p>决定了是不是要现在开始——升国小／升国中节点、成绩波动、时间窗口，给「现在」一个理由</p></div></div><p style="color:var(--text-secondary);font-size:13px;margin-top:12px;">三性确认得越清楚，后面的试听安排、报价时机和关单话术就越准。</p></div><div class="card"><h2>📊 挖需四步流程</h2><div class="step-list"><div class="step-item"><div class="step-num-big">1</div><div class="step-content"><h4>① 基本信息确认</h4><p>「我简单和您确认一下小朋友的基本信息——小朋友名字叫○○对吧？今年X岁，上幼稚园大班／国小X年级，对吗？平时性格是比较活泼还是慢热一点呀？」</p><p style="color:var(--text-secondary);font-size:13px;">要点：系统里有信息也要口头核对一遍——既是确认上课级别，也让家长感觉你在认真做功课；发现出入当场修正录入。</p></div></div><div class="step-item"><div class="step-num-big">2</div><div class="step-content"><h4>② 学习经历和情况</h4><p>了解之前有没有报过数学班或思维班（学了多久、线上还是线下、效果怎么样）、有没有接触过线上课，挖掘强项和薄弱点。基本信息只是起点，真正值钱的是后面五类信息链：</p><p class="highlight">学习经历 → 数学基础/卡点 → 兴趣班安排 → 支付能力 → 学习动机</p></div></div><div class="step-item"><div class="step-num-big">3</div><div class="step-content"><h4>③ 支付能力（自然切入，不硬问）</h4><p>「小朋友现在有在上其他的兴趣班吗？都上什么兴趣班？」「兴趣班是您给他报名还是爸爸给他报名的呀？」</p><p style="color:var(--text-secondary);font-size:13px;">看什么：对价格话题的敏感反应（追问折扣 vs 关心效果）、现有教育投入水平。<strong>不要直接问收入！</strong>价值：避免关单时才发现支付力不匹配。</p></div></div><div class="step-item"><div class="step-num-big">4</div><div class="step-content"><h4>④ 学习动机（为关单铺路）</h4><p>「为什么是现在想了解课程？（升国小／升国中节点？成绩波动？同学都在学？）」「您希望小朋友学完达到一个什么样的目标？」</p><p style="color:var(--text-secondary);font-size:13px;">看什么：动机越具体、越有时间点，关单越近。价值：关单话术直接引用家长自己的动机原话，说服力翻倍。</p></div></div></div></div><div class="card" style="border-top:4px solid var(--accent);"><h2>📋 按年级细分提问清单（先定年级，再问问题）</h2><p style="line-height:1.8;">问法顺序：<strong>年级 → 本年级重点 → 学情信号 → 提问清单 → 收口确认</strong>。每个年级只问 4 句话，问完就能判断学情和关单抓手。下面的问题都是聊天式问法，顺着家长的回答往下接，不要照清单念——念出来的叫审问，接出来的才叫挖需。</p><div class="tab-wrap"><button class="tab-btn active" onclick="switchTab(this,'g1')">小班</button><button class="tab-btn" onclick="switchTab(this,'g2')">中班</button><button class="tab-btn" onclick="switchTab(this,'g3')">大班</button><button class="tab-btn" onclick="switchTab(this,'g4')">一小</button><button class="tab-btn" onclick="switchTab(this,'g5')">二小</button><button class="tab-btn" onclick="switchTab(this,'g6')">三小</button><button class="tab-btn" onclick="switchTab(this,'g7')">四小</button><button class="tab-btn" onclick="switchTab(this,'g8')">五小</button><button class="tab-btn" onclick="switchTab(this,'g9')">六小</button></div><div class="tab-panel active" id="g1"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">幼儿园小班（3-4岁）｜对应级别 S1</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>兴趣启蒙 · 分类集合 · 数量感知 · 简单模式 · 空间位置 · 跟随任务 · 语言表达</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">数量与实物能对应 ／ 分类配对需要提示 ／ 拼图空间反应较好 ／ 任务中容易分心 ／ 愿意尝试并表达</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">小朋友平时在家会不会自己数东西呀？比如您让他拿三颗草莓出来，他能一边用手指着一颗一颗数、拿对吗？还是抓一把就走了？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">玩积木、拼图的时候怎么样？您让他把红色的积木挑出来，他是只认颜色，还是大小和颜色能一起看？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">这个阶段您是想先让他对数学有兴趣、坐得住，还是已经想让他开始认数字了？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解哈，您现在不急着让他算得多快，更希望他愿意想、愿意说，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>数量和实物对不上 ｜ 分类只认一个特征 ｜ 做任务容易分心 ｜ 知道答案但讲不出来</div><div class="tips-box"><strong>常见场景：</strong>拿点心让他拿3块，一把抓一堆 ｜ 收玩具喊他放进红盒子，随便丢一箱 ｜ 拼图卡住就换别的玩具 ｜ 问他为什么，说不出所以然</div></div><div class="tab-panel" id="g2"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">幼儿园中班（4-5岁）｜对应级别 S2</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>数感量化 · 比较与排序 · 模式规律 · 空间策略 · 初步推理 · 专注探索 · 清晰表达</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">数数和比较较熟练 ／ 规律任务需要提示 ／ 空间任务容易卡住 ／ 卡住后容易放弃 ／ 愿意换方法尝试</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">小朋友数数能数到多少啦？倒着数会卡吗？您给他五颗糖和三颗糖，他能一眼看出哪边多，还是要一颗一颗对着数？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">像「红蓝黄、红蓝黄」这样的卡片，让他接着往下排，他排得出来吗？还是要您提醒？走迷宫呢，是自己一路试过去，还是走两步就来问您「这里怎么走」？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">卡住的时候，他会自己再试一次，还是马上喊「我不会」？这个您应该最有感觉。这个阶段您更在意数感基础，还是专注、主动思考和表达？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我听下来，您希望小朋友不是提前刷题，而是先形成思考习惯，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>会背数但数量感不稳 ｜ 规律和空间任务依赖提示 ｜ 卡住后不愿继续 ｜ 能做但说不清方法</div><div class="tips-box"><strong>常见场景：</strong>排队比较容易顺序混乱 ｜ 搭积木会模仿但不会续规律 ｜ 走迷宫依赖家长指路 ｜ 一难就着急求助</div></div><div class="tab-panel" id="g3"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">幼儿园大班（5-6岁）｜对应级别 S3</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>升国小衔接 · 数量关系 · 计算基础 · 读题听题 · 空间与规律 · 专注跟随 · 思路表达</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">简单计算有基础 ／ 数量关系理解不足 ／ 听题容易漏条件 ／ 遇到难题依赖提示 ／ 能说出部分思路</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">简单加减现在到什么程度？比如问他「你有5颗糖，吃掉2颗，还剩几颗」，他要掰手指，还是张口就来？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">您说一句话让他做两件事，比如「先去洗手，再把绘本拿过来」，他能两件都记住吗？上课听老师讲题也是一样的——先看会不会漏条件。</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">九月就要上国小了，您现在最担心的是他算得不够快，还是怕他坐不住、跟不上？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您不想强行拔高，更希望小朋友平稳适应国小，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>会算但数量关系不懂 ｜ 听题容易漏条件 ｜ 课堂跟随习惯没建立 ｜ 遇难题等着大人给提示</div><div class="tips-box"><strong>常见场景：</strong>会计算但不理解分合 ｜ 交代两件事，做完第一件忘了第二件 ｜ 进课堂慢热，全程不举手 ｜ 遇到应用情境不会列关系</div></div><div class="tab-panel" id="g4"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">国小一年级（6-7岁）｜对应级别 S4</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>计算基础 · 读题与数量关系 · 应用题 · 图形空间 · 逻辑推理 · 学习习惯 · 表达思路</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">10以内计算依赖掰手指 ／ 加减等符号理解不稳 ／ 听指令或读题容易漏条件 ／ 书写与检查习惯未建立 ／ 数学任务依赖家长陪同</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">学校现在教到哪儿了？10以内、20以内的加减，他还是要掰手指，还是提笔就写？像13-5这种要借位的，稳不稳？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">作业是自己写完，还是得您坐在旁边盯着？比如「小明有8元，买橡皮用掉3元，还剩几元」这种题，他能自己列出来吗？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">考试丢分，是算错了，还是题没读懂？有没有出现过算得全对、结果答案填错位置的情况？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q4</div><div class="chat-bubble">您现在更希望先稳住校内成绩，还是重点改善应用题、思考方法和学习习惯？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您希望小朋友既跟得上学校，也能独立分析问题，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>会计算但不会分析应用题 ｜ 读题容易漏条件 ｜ 换一种问法就不会 ｜ 作业依赖家长讲解</div><div class="tips-box"><strong>常见场景：</strong>作业会算但应用题等家长讲 ｜ 抄错数字或漏掉条件 ｜ 同一道题换个问法就愣住 ｜ 让他讲讲怎么做的，讲不出过程</div></div><div class="tab-panel" id="g5"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">国小二年级（7-8岁）｜对应级别 S5</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>计算基础 · 乘法启蒙 · 读题与数量关系 · 应用题 · 图形空间 · 逻辑推理 · 学习习惯</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">学习兴趣弱需要督促 ／ 上课或作业容易分心 ／ 数字符号容易看错 ／ 应用题抓不住数量关系 ／ 换题后难以举一反三</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">九九乘法背了没？是用背的背下来了，还是真的明白「3×4就是3个4加起来」？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">100以内的加减，进位退位的地方稳不稳？会不会6看成9、加号看成减号——明明会做，结果因为粗心丢分？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">写作业要催吗？碰到稍微长一点的题目，是愿意自己试，还是直接喊「我不会」？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q4</div><div class="chat-bubble">您现在更希望先提升学习主动性和专注，还是重点突破应用题与审题？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您希望小朋友不用天天盯着也能学好，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>会背乘法但不会用 ｜ 读题容易漏条件 ｜ 换问法后不会迁移 ｜ 作业依赖家长讲解</div><div class="tips-box"><strong>常见场景：</strong>作业要催，难题不愿意碰 ｜ 会做却总因粗心失分 ｜ 应用题换一种问法就不会</div></div><div class="tab-panel" id="g6"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">国小三年级（8-9岁）｜对应级别 S6</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>三年级分水岭 · 直式乘除法 · 1000以内数与分数初步 · 度量与几何 · 数量关系 · 策略工具 · 审题复盘</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">预习复习和独立作业能力弱 ／ 仍依赖死记硬背 ／ 应用题阅读成为瓶颈 ／ 学习兴趣或专注度下降 ／ 作业拖拉且时间规划弱</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">三年级开始有直式乘除法了，像 23×4、65÷3 这种，他算得稳吗？还是有进位、有余数的地方就出错？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">学校开始认识分数了——切披萨、分蛋糕的时候，他懂「二分之一」是什么意思吗？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">作业时间怎么样？是回家先写完再玩，还是拖到最后一刻？写完会自己检查吗，还是写完就合上？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q4</div><div class="chat-bubble">您更关注三年级校内成绩稳定，还是希望小朋友掌握应用题策略、审题方法和举一反三？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您希望降低以后综合题的学习压力，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>综合题步骤容易乱 ｜ 应用题策略选择单一 ｜ 直接下笔忽略审题 ｜ 做错后缺少复盘</div><div class="tips-box"><strong>常见场景：</strong>升三年级后不会自己学 ｜ 题目一长就不想读、抓不住重点 ｜ 作业拖拉，计划总完不成</div></div><div class="tab-panel" id="g7"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">国小四年级（9-10岁）｜对应级别 S7</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>大数与直式乘除 · 分数加减 · 策略选择 · 小数初步 · 角度与重量 · 长应用题 · 升国中能力</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">多位数直式乘除易错 ／ 小数和分数的意义理解不深 ／ 长应用题抓不住关键信息 ／ 审题和检查习惯没跟上 ／ 综合题迁移弱</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">四年级开始碰万以上的大数、更复杂的乘除法，直式计算还稳吗？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">分数加减、小数刚开始学——他知道 0.5 和二分之一其实是一回事吗？还是当两套东西分开记？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">应用题变长了，两三行的题目，他是读完就能列式，还是读完了不知道从哪里下手？您觉得是审题问题，还是分析问题？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q4</div><div class="chat-bubble">您现在更关注校内高分稳定、综合题能力，还是为升国中建立迁移和策略能力？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您希望小朋友面对陌生题也能自己分析，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>熟悉题稳定但迁移弱 ｜ 依赖固定套路 ｜ 多条件题缺少模型 ｜ 不会比较优化解法</div><div class="tips-box"><strong>常见场景：</strong>四年级计算开始快而不稳 ｜ 长应用题读完仍不会列式 ｜ 低年级的习惯问题，在考试里开始集中扣分</div></div><div class="tab-panel" id="g8"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">国小五年级（10-11岁）｜对应级别 S8</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>因数倍数 · 约分通分 · 异分母分数加减 · 分数与小数乘除 · 多边形面积 · 体积容积 · 升国中能力</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">分数和小数规则容易混淆 ／ 因数倍数找不全 ／ 面积公式多开始硬套 ／ 遇到长题和拓展题焦虑 ／ 跳步骤且缺少验算计划</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">因数、倍数这块怎么样？让他找36的因数，能找全吗，还是漏掉几个就停了？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">分数开始要通分了——「二分之一加三分之一」这种异分母的，他知道要先通分吗，还是直接把分母一加？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">面积公式变多了，平行四边形、三角形、梯形，他是记公式硬套，还是明白公式是怎么来的？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q4</div><div class="chat-bubble">您现在更关注校内成绩稳定，还是升国中的能力储备（迁移、策略、模型）？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您希望小朋友不只是刷题，而是有方法地学，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>熟悉题稳定但迁移弱 ｜ 依赖固定套路 ｜ 多步骤题缺少模型 ｜ 不会比较优化解法</div><div class="tips-box"><strong>常见场景：</strong>分数小数规则一多就混 ｜ 面积公式会套却不知道为什么这么算 ｜ 长题、拓展题让小朋友焦虑</div></div><div class="tab-panel" id="g9"><p style="font-weight:700;color:var(--primary);margin-bottom:8px;">国小六年级（11-12岁）｜对应级别 S9</p><p style="font-size:13px;color:var(--text-secondary);"><strong>能力关注点：</strong>比与比值 · 比例与正反比 · 速率 · 圆周长与圆面积 · 柱体体积 · 长应用题 · 升国中衔接</p><p style="font-size:13px;margin-top:6px;"><strong>先听这几个信号（家长一说就对得上）：</strong></p><p style="font-size:13px;color:var(--text-secondary);">比、除法、分数概念混淆 ／ 比例和解比例不稳 ／ 圆与柱体公式易混 ／ 长应用题薄弱 ／ 升学压力下主动性下降</p><div class="chat-scene" style="margin-top:10px;"><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">📋 提问清单（按顺序问，顺着家长的回答往下接，不要照清单念）</div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q1</div><div class="chat-bubble">比和比值开始学了——「3:5」他能说清楚是什么意思吗？跟分数、除法会不会混在一起？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q2</div><div class="chat-bubble">圆周长、圆面积，π乘来乘去的那种，公式用得顺吗？柱体的体积会算吗？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q3</div><div class="chat-bubble">明年就上国中了，您更担心的是他校内成绩波动，还是希望他升上去之前把计算和应用题的底子打牢？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">Q4</div><div class="chat-bubble">升国中这段时间，您更关注校内成绩稳定，还是升国中衔接的能力和心态？</div></div></div><div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">🎯 收口：我理解您希望小朋友升国中前后都能稳住，别在压力下掉状态，对吗？</div></div></div><div class="tips-box" style="margin-top:10px;"><strong>常见卡点：</strong>熟悉题稳定但迁移弱 ｜ 依赖固定套路 ｜ 多条件题缺少模型 ｜ 不会比较优化解法</div><div class="tips-box"><strong>常见场景：</strong>比、分数和除法总是混 ｜ 圆和柱体的公式容易套错 ｜ 升学压力下遇到长题就放弃</div></div></div><div class="card"><h2>💰 支付能力与学习动机（为关单铺路）</h2><div class="strategy-grid"><div class="strategy-card" style="border:2px solid var(--primary);"><h4>💰 支付能力</h4><p><strong>问什么：</strong>性格活泼还是慢热？有没有上其他兴趣班？兴趣班是您报名还是爸爸报名的？</p><p><strong>看什么：</strong>对价格的敏感反应（追问折扣 vs 关心效果）、现有教育投入水平。</p><p><strong>价值：</strong>避免关单时才发现支付力不匹配，白忙一场。</p></div><div class="strategy-card" style="border:2px solid var(--primary);"><h4>🎯 学习动机</h4><p><strong>问什么：</strong>为什么是现在想了解课程？希望小朋友学完达到什么目标？</p><p><strong>看什么：</strong>动机越具体、越有时间点，关单越近；「随便看看」型要靠需求试探再造动机。</p><p><strong>价值：</strong>关单话术直接引用家长自己的动机原话，说服力翻倍。</p></div></div><div class="highlight-box warning" style="margin-top:12px;">注意：两项信息为内部判断依据，对家长只做自然了解，不要盘问式连环发问。</div></div>` },
   { id:'s4', title:'试听课推荐与定级', duration:'10-12分钟', icon:'4', type:'content_quiz', quizId:'quiz4', content:`<div class="section-header"><span class="section-badge">第4章</span><h1>试听课推荐与定级</h1><p class="duration">⏱ 学习时长：10-12分钟 | 📝 含5道测验题</p></div><div class="card"><h2>📊 九阶试听课课件总览</h2><p style="color:var(--text-secondary);margin-bottom:16px;">根据孩子的年龄和数学基础，从 S1~S9 级别中精确匹配最合适的试听课。以下为试听课件（S1~S7）在<strong>中文、英语</strong>两种语言下，字体、提示音、动画的支持情况（✓=已支持）：</p><div style="overflow-x:auto;"><table class="data-table"><thead><tr><th class="phase-header" colspan="2">语言/类型</th><th class="phase-header" colspan="4">S1启蒙段</th><th class="phase-header" colspan="3">S2基础段</th><th class="phase-header" colspan="2">S3进阶段</th><th class="phase-header" colspan="2">S4高阶段</th><th class="phase-header" colspan="2">S5阶段</th><th class="phase-header" colspan="2">S6阶段</th><th class="phase-header" colspan="2">S7阶段</th></tr><tr><th>语言</th><th>类型</th><th>乐迪的一天</th><th>光影魔术师</th><th>海底派对</th><th>最棒的演出</th><th>欢乐舞会</th><th>欢乐博物馆</th><th>皮皮虎的礼物</th><th>新智闯悬浮岛</th><th>魔法集市奇遇</th><th>魔法水源</th><th>逃离暴风雨</th><th>超时空任务</th><th>厨神挑战赛</th><th>世纪末大侦探</th><th>寻找芳香草</th><th>世纪末大侦探</th><th>决战金杯星</th></tr></thead><tbody><tr><td rowspan="3"><strong>中文</strong></td><td>字体</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td></tr><tr><td>提示音</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td></tr><tr><td>动画</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td></tr><tr><td rowspan="3"><strong>英语</strong></td><td>字体</td><td>✗</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td>✗</td></tr><tr><td>提示音</td><td>✗</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td>✗</td></tr><tr><td>动画</td><td>✗</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td>✗</td><td class="check">✓</td><td class="check">✓</td><td>✗</td><td class="check">✓</td><td>✗</td></tr></tbody></table></div><div class="tips-box"><strong>👶 S1 乐迪的一天：</strong>适合<strong>幼幼班</strong>（幼稚园中班/小班）或<strong>零基础</strong>的小朋友，是 VIP THINK 最入门的主题，互动密度低、引导性最强，作为孩子的第一节数学思维课最合适。</div><div class="tips-box"><strong>💡 使用建议：</strong>台湾学员以<strong>中文课件</strong>为主，英语课件可按家长需求搭配；S1~S4 是启蒙到高阶段的试听主力，S5~S7 适合数学基础较好、有竞赛规划的孩子。</div></div><div class="card"><h2>🔄 试听课定级决策流程</h2><div style="text-align:center;padding:12px;"><div class="flow-steps" style="flex-direction:column;gap:8px;"><div class="flow-step" style="background:#FEF2F2;border-color:#DC2626;"><h4>① 确认年龄 & 年级</h4></div><div class="flow-arrow" style="transform:rotate(90deg);">→</div><div class="flow-step" style="background:#FFFBEB;border-color:#D97706;"><h4>② 判断数学基础</h4><p>校内成绩/有无培训经历</p></div><div class="flow-arrow" style="transform:rotate(90deg);">→</div><div class="flow-step" style="background:#ECFDF5;border-color:#059669;"><h4>③ 匹配对应阶段</h4><p>S1~S9</p></div><div class="flow-arrow" style="transform:rotate(90deg);">→</div><div class="flow-step" style="background:#EEF2FF;border-color:#4F46E5;"><h4>④ 选择语言版本</h4><p>中文/英语</p></div><div class="flow-arrow" style="transform:rotate(90deg);">→</div><div class="flow-step" style="background:#FDF2F8;border-color:#DB2777;"><h4>⑤ 确认并推荐试听课</h4><p>主题+时间+预防针</p></div></div></div></div><div class="card"><h2>🗓️ 确认难度和时间的话术</h2><p style="color:var(--text-secondary);margin-bottom:16px;">给出<strong>具体的两个时间段</strong>让家长二选一，避免大面积时间导致犹豫：</p><div class="chat-scene"><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">我们今晚7点20和8点10都有开设试听课程，两个时间您看哪个比较方便呢？</div></div></div><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">7点吧。</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC · 🔌 确认设备</div><div class="chat-bubble">好的，那妈妈给小朋友用什么设备上课呀？平板、笔电或者手机都可以。</div></div></div><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">有什么区别吗？</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC</div><div class="chat-bubble">因为我们是小班互动课，比较推荐妈妈选择屏幕较大的设备给小朋友上课，当然手机也是可以的。这边会根据上课语言，为您安排对应语言的老师和课件～</div></div></div></div></div><div class="card"><h2>💉 打预防针</h2><p style="color:var(--text-secondary);margin-bottom:16px;">在确认试听时间后，主动给家长做心理建设，降低首课期望落差：</p><div class="script-block">温馨提醒一下：试听课是第一次上课，小朋友可能会有些不适应或者反应偏慢，这是非常正常的。我们的老师非常有经验，会根据小朋友的课堂表现灵活调整节奏。所以课堂上家长不用太紧张，也尽量不要在旁边替小朋友回答问题，让小朋友自己尝试、自己表达，这样老师才能更准确地判断小朋友的真实水平，后续也能给出更精准的学习建议。</div><div class="tips-box"><strong>👨‍👩‍👧 确认陪同人：</strong>"另外想确认一下，上课当天是哪位家长陪小朋友一起上课呢？是爸爸、妈妈，还是家里的其他长辈？方便我们老师提前了解情况，上课时也会更有针对性地和家长沟通～"</div></div>` },
   { id:'s5', title:'电话收尾与Line跟进', duration:'8-10分钟', icon:'5', type:'content_quiz', quizId:'quiz5', content:`<div class="section-header"><span class="section-badge">第5章</span><h1>电话收尾与Line跟进</h1><p class="duration">⏱ 学习时长：8-10分钟 | 📝 含5道测验题</p></div><div class="card"><h2>📞 挂机前 — 三个关键确认</h2><div class="highlight-box warning"><strong>时机：</strong>在确认完上课难度和时间后、礼貌挂机之前，必须完成以下三项确认</div><div class="step-list"><div class="step-item"><div class="step-num-big">1</div><div class="step-content"><h4>确认上课设备 <span class="badge badge-primary">电脑/iPad/手机</span></h4><p>询问家长上课使用什么设备（电脑、iPad还是手机），确认是否已下载APP。如未下载，指引家长提前安装，确保上课当天设备就绪。</p></div></div><div class="step-item"><div class="step-num-big">2</div><div class="step-content"><h4>确认添加好 Line <span class="badge badge-warning">私域连接</span></h4><p>确认家长已添加CC的Line为好友，建立私域触达通道。这是后续发送资料、跟进提醒、课后沟通的基础。</p></div></div><div class="step-item"><div class="step-num-big">3</div><div class="step-content"><h4>试探报课意向 <span class="badge badge-success">关键铺垫</span></h4><p>在确认设备后顺势试探家长报课态度："小朋友试听完如果喜欢的话，后续报课方面您是怎么考虑的呢？" 提前感知家长的预算和意向，为后续关单做准备。</p></div></div></div></div><div class="card"><h2>💬 挂机前对话示例</h2><div class="chat-scene"><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC · 🔌 确认设备</div><div class="chat-bubble">嗯嗯好哦，您这边晚上用电脑，ipad，还是手机上课呀？</div></div></div><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">ipad</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC · 📲 确认Line</div><div class="chat-bubble">ok，我们加一下line，然后我把软体安装方式发给您，您可以提前操作哦~</div></div></div><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">好的</div></div></div><div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC · 📲 官方账号</div><div class="chat-bubble">嗯嗯好 那麻烦妈咪把手机外扩打开，我给您报一下官方账号哈 我们是官方的<span class="highlight">@887vip（固定的ID）</span>  最懂你的数学家教 嗯嗯，您现在加一下，发个贴图或者手机门号</div></div></div><div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">好</div></div></div></div></div><div class="card"><h2>📱 电话结束语</h2><p style="color:var(--text-secondary);margin-bottom:16px;">目的：再次介绍自己加深印象，告知后续动作，礼貌挂机。</p><div class="script-block">好的，那我们就定在明天下午2点半，我已经帮小朋友安排好老师了。稍后我会通过Line把试听课的详细信息发给您，包括APP下载链接、课程内容介绍和约课提醒。如果有什么问题随时联系我，我是VIP THINK的课程顾问XX~</div></div><div class="card"><h2>📦 挂机后 — 必发三件套</h2><p style="color:var(--text-secondary);margin-bottom:16px;">挂机后立即通过 Line 发送以下三样内容：</p><div class="step-list"><div class="step-item"><div class="step-num-big">1</div><div class="step-content"><h4>APP下载方式</h4><p>引导家长在 App Store（苹果端）/ Google Play Store（安卓端）搜索「VIP THINK学生端」下载，或直接发送下载链接。</p></div></div><div class="step-item"><div class="step-num-big">2</div><div class="step-content"><h4>试听内容介绍</h4><p>根据了解到的年龄和数学基础，发送对应级别的试听课内容介绍。</p></div></div><div class="step-item"><div class="step-num-big">3</div><div class="step-content"><h4>约课提醒</h4><p>包含时间、账号、主题、内容，提醒提前下载APP准时上课。</p></div></div></div></div><div class="card"><h2>📝 约课提醒模板</h2><div class="script-tpl"><span class="var">XX</span>妈妈您好，小朋友的课程已经安排好了🎉
 试听时间：明天 <span class="var">9.11日 20:30</span>
@@ -387,9 +387,9 @@ const chapterQuizzes = [
   [ // ch3
     { q:'挖需四步的正确顺序是？', opts:['支付能力→基本信息→学习动机→学习经历','基本信息→学习经历→支付能力→学习动机','学习动机→基本信息→支付能力→学习经历','学习经历→支付能力→学习动机→基本信息'], correct:1 },
     { q:'以下哪项对"需求"的定义最准确？', opts:['客户想买的东西','现状和未来期待之间的距离','家长能接受的最高价格','小朋友最喜欢的学科'], correct:1 },
-    { q:'挖需的目的——塑造"销售三性"不包括？', opts:['便宜性——证明我们的课程最便宜','必要性——数学是不是要报班学','唯一性——是不是要在这里学','紧迫性——是不是要现在开始学'], correct:0 },
-    { q:'挖需阶段最重要的原则是？', opts:['多说少听，展示专业性','尽快报价，抢占先机','没有挖到需求之前，不要报价抛优惠','跳过支付能力判断，直接问学习动机'], correct:2 },
-    { q:'判断家长支付能力时，正确的做法是？', opts:['直接问"你们家庭月收入多少？"','通过"之前报过什么班？""读的是双语学校还是一般学校？"间接了解','查看家长的Line动态判断','不需要判断，直接推荐最贵的套餐'], correct:1 }
+    { q:'挖需的目的——塑造"销售三性"不包括？', opts:['便宜性——证明我们的课程最便宜','重要性——数学是不是要报班学','唯一性——是不是要在VIP THINK学','紧迫性——是不是要现在开始学'], correct:0 },
+    { q:'按年级细分挖需时，国小二年级应该重点了解？', opts:['方程和等量关系','九九乘法是背下来的还是理解意思，进位退位稳不稳','圆柱圆锥的公式','比与比值和速率'], correct:1 },
+    { q:'每个年级问完提问清单后，正确的"收口"方式是？', opts:['直接报价并抛出优惠','用封闭式确认总结家长期待："我理解您希望……对吗？"','问家长"要不要现在就买"','加家长Line之后再聊'], correct:1 }
   ],
   [ // ch4
     { q:'推荐试听课等级的核心依据是？', opts:['家长的收入水平','随机分配一个级别','孩子的年龄、年级和数学基础综合判断','家长自己选择喜欢哪个主题'], correct:2 },
@@ -527,476 +527,8 @@ const roleplayConfig = {
 // 第2章 AI 对话模拟练习配置（开场白 + 五大拒绝理由）
 // ============================================================
 const DRILL_PASS_SCORE = 70; // 单关 & 综合及格线
-const drillScenes = [
-  {
-    id: 'd1', label: '开场白练习', type: 'opening', objectionType: null,
-    stageLabel: '第 1 关 / 共 6 关',
-    scenario: '你是一位课程顾问（CC），这是你第一次致电台湾家长，为小朋友安排数学思维试听课。家长之前在 FB 粉专为 6 岁女儿（幼稚园大班）申请了试听。',
-    openingLine: '喂，你好，请问是哪位？',
-    objective: '完成开场白三步法：表明身份 → 告知来电目的 → 让客户感觉有帮助，并争取提问授权',
-    nextStage: '完成开场白后，将进入五大拒绝理由逐一演练',
-    topics: [
-      { label: '① 表明身份', hint: '我是VIP THINK课程顾问X老师' },
-      { label: '② 来电目的', hint: '看到您申请了数学思维试听课' },
-      { label: '③ 让家长感觉有帮助', hint: '为了给孩子安排最合适的老师和课件' },
-      { label: '④ 提问授权', hint: '想了解孩子基本情况，您现在方便吗' }
-    ],
-    parentSystemPrompt: `你扮演一位台湾家长（女儿6岁，幼稚园大班），正在接听VIP THINK课程顾问（CC）打来的第一通电话。
+// 旧版AI演练场景数据已移除（第2章改为离线点选演练，第7章终极考核仍用AI自由对话）
 
-【背景信息】
-- 你之前在FB粉专为女儿申请了数学思维试听课
-- 你对陌生来电有点防备心，记不太清申请细节
-- 女儿之前没上过数学班，你对课程有兴趣但不了解
-
-【你的身份特点】
-- 使用台湾国语风格中文（简体书写），说话自然、口语化（啦、喔、吗、耶）
-- 回答简短，1-3句话，礼貌但有点警觉
-- 如果CC表明身份、说明来电目的（试听课安排）并让你感到有帮助，你会慢慢放松、配合回答
-
-【可能的回应】
-- 开场：「喂，你好，请问是哪位？」
-- CC表明身份后：「喔，是老师啊，你好你好，请问有什么事吗？」
-- CC说明来电目的：「哦，对，我之前有填过资料，怎么了吗？」
-- CC提出想了解孩子情况：「可以啊，你想了解什么？」
-- CC上来直接推销、语气生硬：「那个……我现在有点忙，改天再说吧」（想挂电话）
-
-【反应规则 — 极其重要】
-✅ 正确做法：
-- CC开场白专业（身份+目的+有帮助）→ 信任度提升，配合回答
-- CC乱讲话、答非所问、或输入明显无意义内容 → 表现困惑：「你说什么？」「我不是很懂你的意思」
-
-❌ 绝对禁止：
-- 不管CC讲什么，都按固定顺序背预设台词
-- 假装听懂乱码、数字串或明显无意义的内容
-- 每次回答相同的话
-
-【对话节奏】
-- 每次只回应CC的最新一句话
-- 保持真实感，像真的家长在通电话
-
-【回复格式】
-- 直接讲出你的反应，不需要前缀（不要写「家长说：」之类）
-- 保持1-3句话长度，自然聊天节奏`,
-    evaluatorSystemPrompt: `你是VIP THINK培训机构的资深教学评审官，评估CC学员在「开场白」练习中的表现。
-
-【评分标准】（满分100分）
-
-1. 流程规范性（40分）：是否完成开场白三步法
-   - 表明身份（我是谁 / VIP THINK课程顾问）
-   - 告知来电目的（为小朋友安排数学思维试听课）
-   - 让客户感觉有帮助（为了给孩子安排最合适的老师和课件）
-   - 缺少步骤或顺序混乱扣分
-
-2. 信息准确性（30分）：传递的信息是否准确、完整、专业
-   - 机构名称（VIP THINK）、来电目的（试听安排）、申请渠道（FB粉专）
-
-3. 服务亲和力（30分）：语气、态度、沟通技巧
-   - 语气礼貌自然、亲切
-   - 不推销、不施压
-   - 自然过渡到提问授权（了解孩子基本情况）
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度，不是讲得越多分越高
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":32,"accuracy":26,"rapport":27,"coverage":0,"feedback":"整体评语（具体指出这次开场白做得好和不好的地方）","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}`
-  },
-  {
-    id: 'd2', label: '异议处理 · 没时间', type: 'objection', objectionType: '没时间',
-    stageLabel: '第 2 关 / 共 6 关',
-    scenario: '家长表示最近工作很忙，没有时间上试听课。',
-    openingLine: '唉，我们最近真的太忙了，实在没时间上试听课呀……',
-    objective: '用「理解→价值→引导→坚持，不展开」化解：理解共情 → 线上省时+仅40分钟 → 二选一约时间',
-    nextStage: '下一关：异议处理 · 小朋友不喜欢',
-    topics: [
-      { label: '① 理解共情', hint: '先表示理解，不直接反驳' },
-      { label: '② 价值主张', hint: '线上上课省时 + 课程仅40分钟' },
-      { label: '③ 二选一引导', hint: '给出明天两个具体时间段' },
-      { label: '④ 坚持邀约', hint: '给小朋友安排个好老师' }
-    ],
-    parentSystemPrompt: `你扮演一位忙碌的台湾家长（女儿6岁，幼稚园大班），正在接听VIP THINK课程顾问（CC）打来的课前电话。
-
-【背景信息】
-- 你最近工作很忙，女儿的兴趣班也排得很满
-- 你对数学思维课有兴趣，但确实抽不出时间
-- 你的核心异议是「没时间」
-
-【你的身份特点】
-- 使用台湾国语风格中文（简体书写），语气有点疲惫和无奈（啦、喔、唉、吗）
-- 回答简短，1-3句话，一开始坚持「没时间」
-
-【可能的回应】
-- 开场：「唉，我们最近真的太忙了，实在没时间上试听课呀……」
-- CC共情后：「你们是理解，但真的排不开时间耶……」
-- CC强调线上省时：「线上是吗？那倒是省得接送……」
-- CC强调只要40分钟：「40分钟的话，好像也不是不行……」
-- CC给出二选一时间：「那……明天晚上7点还是8点，你帮我看看哪个合适吧」
-- CC反驳说教：「哎呀，你不懂，我们真的没时间，就这样吧」（想挂电话）
-
-【反应规则 — 极其重要】
-✅ 正确做法：
-- CC理解共情 + 强调线上省时 + 40分钟短课 → 你会松动、愿意考虑
-- CC给出具体二选一时间 → 你会答应其中一个是试试看
-- CC乱讲话、答非所问、或输入明显无意义内容 → 表现困惑：「你说什么？」「我不是很懂你的意思」
-
-❌ 绝对禁止：
-- CC没化解你的顾虑就强行约时间 → 你会拒绝
-- 不管CC讲什么都按固定顺序背预设台词
-- 假装听懂乱码、数字串或明显无意义的内容
-
-【对话节奏】
-- 每次只回应CC的最新一句话，保持真实感
-
-【回复格式】
-- 直接讲出你的反应，不需要前缀（不要写「家长说：」之类）
-- 保持1-3句话长度，自然聊天节奏`,
-    evaluatorSystemPrompt: `你是VIP THINK培训机构的资深教学评审官，评估CC学员针对「没时间」异议的处理能力。
-
-【评分标准】（满分100分）
-
-1. 流程规范性（30分）：是否按「理解→价值→引导→坚持，不展开」处理
-   - 先理解共情，不直接反驳家长
-   - 给出针对「没时间」的价值主张
-   - 用二选一引导约时间
-   - 坚持邀约但不展开纠缠
-
-2. 要点准确性（30分）：针对「没时间」的价值主张是否到位
-   - 强调线上上课省时（不用接送）
-   - 课程时间只需40分钟，高效学习
-   - 用具体二选一时间段引导（如明天X点或X点）
-
-3. 服务亲和力（30分）：语气、态度、沟通技巧
-   - 语气礼貌、有同理心、不施压
-
-4. 话题覆盖度（10分）：是否覆盖本场景必要话题
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":25,"accuracy":26,"rapport":27,"coverage":7,"feedback":"整体评语（具体指出这次异议处理做得好和不好的地方）","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}`
-  },
-  {
-    id: 'd3', label: '异议处理 · 小朋友不喜欢', type: 'objection', objectionType: '小朋友不喜欢',
-    stageLabel: '第 3 关 / 共 6 关',
-    scenario: '家长表示小朋友不喜欢数学，觉得试了也没用。',
-    openingLine: '我家小朋友就是不喜欢数学，试了也没用的啦……',
-    objective: '理解 + 回顾初心 + 引导型老师承诺 + 二选一约时间',
-    nextStage: '下一关：异议处理 · 报其他班了',
-    topics: [
-      { label: '① 理解+回顾初心', hint: '理解孩子，回顾当初申请试听的初心' },
-      { label: '② 引导型老师承诺', hint: '安排引导性较强的老师先让孩子感受' },
-      { label: '③ 兴趣培养是过程', hint: '先迈开第一步，培养兴趣需要过程' },
-      { label: '④ 二选一引导', hint: '给出两个具体时间段' }
-    ],
-    parentSystemPrompt: `你扮演一位台湾家长（女儿6岁，幼稚园大班），正在接听VIP THINK课程顾问（CC）打来的课前电话。
-
-【背景信息】
-- 女儿对数学没兴趣，一提数学就抗拒
-- 你觉得试了也没用，有点灰心
-- 你的核心异议是「小朋友不喜欢数学」
-
-【你的身份特点】
-- 使用台湾国语风格中文（简体书写），语气带点无奈（啦、喔、唉）
-- 回答简短，1-3句话，一开始觉得「试了也没用」
-
-【可能的回应】
-- 开场：「我家小朋友就是不喜欢数学，试了也没用的啦……」
-- CC理解并回顾初心：「嗯……当初是看她对数学没什么概念，想让她早点接触」
-- CC承诺引导型老师：「引导性强的老师吗？那她会不会比较愿意上？」
-- CC说兴趣需要过程：「你说得也有道理，总要有个过程……」
-- CC给出二选一时间：「那……明天下午4点还是晚上8点，你看看哪个方便吧」
-- CC贬低孩子或说「不喜欢就算了」→ 你不想再聊
-
-【反应规则 — 极其重要】
-✅ 正确做法：
-- CC理解你 + 回顾初心 + 承诺引导型老师 → 你会松动
-- CC给出二选一时间 → 你愿意安排试听
-- CC乱讲话、答非所问、或输入明显无意义内容 → 表现困惑：「你说什么？」「我不是很懂你的意思」
-
-❌ 绝对禁止：
-- CC没化解你的顾虑就强行约时间 → 你会拒绝
-- 不管CC讲什么都按固定顺序背预设台词
-- 假装听懂乱码、数字串或明显无意义的内容
-
-【对话节奏】
-- 每次只回应CC的最新一句话，保持真实感
-
-【回复格式】
-- 直接讲出你的反应，不需要前缀（不要写「家长说：」之类）
-- 保持1-3句话长度，自然聊天节奏`,
-    evaluatorSystemPrompt: `你是VIP THINK培训机构的资深教学评审官，评估CC学员针对「小朋友不喜欢数学」异议的处理能力。
-
-【评分标准】（满分100分）
-
-1. 流程规范性（30分）：是否按「理解→价值→引导→坚持，不展开」处理
-   - 先理解家长，不直接反驳
-   - 回顾家长申请试听的初心
-   - 用二选一引导约时间
-
-2. 要点准确性（30分）：针对「小朋友不喜欢」的价值主张是否到位
-   - 理解孩子不喜欢数学的现状
-   - 回顾初心：当初申请试听是想培养兴趣
-   - 承诺安排引导性较强的老师，先让孩子感受
-   - 说明培养兴趣需要一个过程，先帮孩子迈开第一步
-
-3. 服务亲和力（30分）：语气、态度、沟通技巧
-   - 语气礼貌、有同理心、不施压
-
-4. 话题覆盖度（10分）：是否覆盖本场景必要话题
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":25,"accuracy":26,"rapport":27,"coverage":7,"feedback":"整体评语（具体指出这次异议处理做得好和不好的地方）","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}`
-  },
-  {
-    id: 'd4', label: '异议处理 · 报其他班了', type: 'objection', objectionType: '报其他班了',
-    stageLabel: '第 4 关 / 共 6 关',
-    scenario: '家长表示已经报了其他数学班，暂时不考虑。',
-    openingLine: '我们已经报了其他数学班了，暂时不考虑了啦……',
-    objective: '不贬低竞品 + 免费体验 + 贴合108课纲/思维拓展 + 检验效果',
-    nextStage: '下一关：异议处理 · 没有领课',
-    topics: [
-      { label: '① 理解不贬低', hint: '先理解，不贬低其他机构' },
-      { label: '② 免费体验', hint: '强调这节课免费' },
-      { label: '③ 108课纲贴合', hint: '贴合108课纲难度和要求，有思维拓展' },
-      { label: '④ 检验效果', hint: '当检验目前的学习效果' }
-    ],
-    parentSystemPrompt: `你扮演一位台湾家长（女儿6岁，幼稚园大班），已经给女儿报了别的数学班，正在接听VIP THINK课程顾问（CC）打来的课前电话。
-
-【背景信息】
-- 女儿已经在别的机构报了数学课
-- 你觉得暂时不需要再考虑新的课程
-- 你的核心异议是「已经报了其他班」
-
-【你的身份特点】
-- 使用台湾国语风格中文（简体书写），语气比较坚定（啦、喔、呢）
-- 回答简短，1-3句话
-
-【可能的回应】
-- 开场：「我们已经报了其他数学班了，暂时不考虑了啦……」
-- CC不贬低别家并介绍免费试听：「免费的？那倒是可以让孩子体验看看」
-- CC说明贴合108课纲：「你们课程贴合108课纲？那内容会不会跟学校不太一样？」
-- CC说可以检验学习效果：「检验一下学习效果？这个倒是不错……」
-- CC给出二选一时间：「那……这周末下午或者晚上，你帮我看看哪个时间吧」
-- CC贬低其他机构 → 你觉得没品，不太想聊
-
-【反应规则 — 极其重要】
-✅ 正确做法：
-- CC不贬低其他机构 + 强调免费体验 + 贴合108课纲 + 检验效果 → 你会松动
-- CC给出二选一时间 → 你愿意安排试听
-- CC乱讲话、答非所问、或输入明显无意义内容 → 表现困惑：「你说什么？」「我不是很懂你的意思」
-
-❌ 绝对禁止：
-- CC贬低你报的机构 → 你反感
-- CC没化解你的顾虑就强行约时间 → 你会拒绝
-- 不管CC讲什么都按固定顺序背预设台词
-- 假装听懂乱码、数字串或明显无意义的内容
-
-【对话节奏】
-- 每次只回应CC的最新一句话，保持真实感
-
-【回复格式】
-- 直接讲出你的反应，不需要前缀（不要写「家长说：」之类）
-- 保持1-3句话长度，自然聊天节奏`,
-    evaluatorSystemPrompt: `你是VIP THINK培训机构的资深教学评审官，评估CC学员针对「已经报了其他班」异议的处理能力。
-
-【评分标准】（满分100分）
-
-1. 流程规范性（30分）：是否按「理解→价值→引导→坚持，不展开」处理
-   - 先理解家长，不直接反驳、不贬低其他机构
-   - 用二选一引导约时间
-
-2. 要点准确性（30分）：针对「报其他班了」的价值主张是否到位
-   - 强调这节课是免费的
-   - 说明数学难度逐步加大、108课纲重视核心素养培养
-   - 课程贴合108课纲的难度和要求，还有思维拓展训练
-   - 把试听定位成「检验目前的学习效果」
-
-3. 服务亲和力（30分）：语气、态度、沟通技巧
-   - 语气礼貌、客观、不贬低竞品
-
-4. 话题覆盖度（10分）：是否覆盖本场景必要话题
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":25,"accuracy":26,"rapport":27,"coverage":7,"feedback":"整体评语（具体指出这次异议处理做得好和不好的地方）","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}`
-  },
-  {
-    id: 'd5', label: '异议处理 · 没有领课', type: 'objection', objectionType: '没有领课/免费担心',
-    stageLabel: '第 5 关 / 共 6 关',
-    scenario: '家长没有领过这个课，担心免费课的质量。',
-    openingLine: '免费的会不会质量不行啊？我也没领过这个课……',
-    objective: '试听课=测评课 + 全方位评估 + 检验效果 + 二选一',
-    nextStage: '下一关：异议处理 · 其他理由',
-    topics: [
-      { label: '① 理解顾虑', hint: '先理解家长对免费课的疑虑' },
-      { label: '② 试听=测评定位', hint: '这节课不仅是试听，也是测评课' },
-      { label: '③ 老师专业评估', hint: '优秀老师对数学水平做全方位评估' },
-      { label: '④ 检验效果+二选一', hint: '顺便检验学习效果，给出两个时间段' }
-    ],
-    parentSystemPrompt: `你扮演一位台湾家长（女儿6岁，幼稚园大班），没有领过VIP THINK的试听课，正在接听课程顾问（CC）打来的课前电话。
-
-【背景信息】
-- 你之前有填过申请资料，但没真正了解过这个课
-- 你对免费的东西有点怀疑，担心质量不好
-- 你的核心异议是「免费课质量不行 / 没领过这个课」
-
-【你的身份特点】
-- 使用台湾国语风格中文（简体书写），语气带点疑虑（啦、吗、喔）
-- 回答简短，1-3句话
-
-【可能的回应】
-- 开场：「免费的会不会质量不行啊？我也没领过这个课……」
-- CC说试听也是测评：「测评课？所以老师会评估小朋友的水平？」
-- CC说老师很优秀：「那倒是可以顺便检验一下小朋友的学习效果……」
-- CC给出二选一时间：「那……明天下午4点还是晚上8点，你帮我看看哪个方便吧」
-- CC推销语气过重 → 你更怀疑
-
-【反应规则 — 极其重要】
-✅ 正确做法：
-- CC理解你的顾虑 + 说明试听也是测评课 + 老师专业评估 → 你会松动
-- CC给出二选一时间 → 你愿意安排试听
-- CC乱讲话、答非所问、或输入明显无意义内容 → 表现困惑：「你说什么？」「我不是很懂你的意思」
-
-❌ 绝对禁止：
-- CC没化解你的顾虑就强行约时间 → 你会拒绝
-- 不管CC讲什么都按固定顺序背预设台词
-- 假装听懂乱码、数字串或明显无意义的内容
-
-【对话节奏】
-- 每次只回应CC的最新一句话，保持真实感
-
-【回复格式】
-- 直接讲出你的反应，不需要前缀（不要写「家长说：」之类）
-- 保持1-3句话长度，自然聊天节奏`,
-    evaluatorSystemPrompt: `你是VIP THINK培训机构的资深教学评审官，评估CC学员针对「没有领课 / 免费课质量担心」异议的处理能力。
-
-【评分标准】（满分100分）
-
-1. 流程规范性（30分）：是否按「理解→价值→引导→坚持，不展开」处理
-   - 先理解家长对免费课的疑虑
-   - 用二选一引导约时间
-
-2. 要点准确性（30分）：针对「没领过课 / 免费担心」的价值主张是否到位
-   - 说明这节课不仅是试听课，也是一节测评课
-   - 我们的老师都是非常优秀的老师，可以对小朋友的数学水平进行全方位评估
-   - 家长也可以正好检验一下小朋友目前的学习效果
-
-3. 服务亲和力（30分）：语气、态度、沟通技巧
-   - 语气礼貌、真诚、不施压
-
-4. 话题覆盖度（10分）：是否覆盖本场景必要话题
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":25,"accuracy":26,"rapport":27,"coverage":7,"feedback":"整体评语（具体指出这次异议处理做得好和不好的地方）","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}`
-  },
-  {
-    id: 'd6', label: '异议处理 · 其他理由', type: 'objection', objectionType: '其他理由',
-    stageLabel: '第 6 关 / 共 6 关',
-    scenario: '家长表示再考虑一下，或要跟家人商量。',
-    openingLine: '我再考虑一下啦……还是要跟家人商量看看……',
-    objective: '尊重不施压 + 零成本体验 + 体验后更有依据 + 轻松引导',
-    nextStage: '完成本关后，将提交全部对话记录进行综合考核评分',
-    topics: [
-      { label: '① 尊重不施压', hint: '先尊重家长，不施压' },
-      { label: '② 零成本体验', hint: '体验一次不花钱，试了才知道' },
-      { label: '③ 体验后更有依据', hint: '体验完再和家人商量更有依据' },
-      { label: '④ 轻松引导', hint: '轻松给出时间选择' }
-    ],
-    parentSystemPrompt: `你扮演一位犹豫的台湾家长（女儿6岁，幼稚园大班），正在接听VIP THINK课程顾问（CC）打来的课前电话。
-
-【背景信息】
-- 你对课程有兴趣，但拿不定主意
-- 你想再考虑一下，或跟家人商量看看
-- 你的核心异议是「再考虑 / 跟家人商量」
-
-【你的身份特点】
-- 使用台湾国语风格中文（简体书写），语气比较犹豫（啦、吗、耶）
-- 回答简短，1-3句话
-
-【可能的回应】
-- 开场：「我再考虑一下啦……还是要跟家人商量看看……」
-- CC尊重你：「你们还挺理解的，那我再看看好了」
-- CC说零成本体验：「体验一次不花钱？那倒是可以试试看……」
-- CC说体验后更有依据：「也是啦，体验完了跟家人商量也更有依据」
-- CC轻松给时间：「那……明天下午4点还是晚上8点，你帮我看看哪个方便吧」
-- CC施压催单：「你这样催我，我更想考虑看看了」（反感）
-
-【反应规则 — 极其重要】
-✅ 正确做法：
-- CC尊重不施压 + 强调零成本体验 + 体验后更有依据 → 你会松动
-- CC给出轻松的时间选择 → 你愿意安排试听
-- CC乱讲话、答非所问、或输入明显无意义内容 → 表现困惑：「你说什么？」「我不是很懂你的意思」
-
-❌ 绝对禁止：
-- CC施压催单 → 你更犹豫
-- CC没化解你的顾虑就强行约时间 → 你会拒绝
-- 不管CC讲什么都按固定顺序背预设台词
-- 假装听懂乱码、数字串或明显无意义的内容
-
-【对话节奏】
-- 每次只回应CC的最新一句话，保持真实感
-
-【回复格式】
-- 直接讲出你的反应，不需要前缀（不要写「家长说：」之类）
-- 保持1-3句话长度，自然聊天节奏`,
-    evaluatorSystemPrompt: `你是VIP THINK培训机构的资深教学评审官，评估CC学员针对「再考虑 / 跟家人商量」异议的处理能力。
-
-【评分标准】（满分100分）
-
-1. 流程规范性（30分）：是否按「理解→价值→引导→坚持，不展开」处理
-   - 先尊重家长，不施压、不催促
-   - 用轻松的二选一引导约时间
-
-2. 要点准确性（30分）：针对「再考虑 / 跟家人商量」的价值主张是否到位
-   - 体验一次不花钱，试了才知道适不适合
-   - 先帮小朋友排一节课，体验完了再和家人商量更有依据
-   - 用「明后天哪个时间段方便」轻松引导
-
-3. 服务亲和力（30分）：语气、态度、沟通技巧
-   - 语气轻松、尊重、不施压
-
-4. 话题覆盖度（10分）：是否覆盖本场景必要话题
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":25,"accuracy":26,"rapport":27,"coverage":7,"feedback":"整体评语（具体指出这次异议处理做得好和不好的地方）","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}`
-  }
-];
 
 // ============================================================
 // State
@@ -1211,6 +743,8 @@ function renderSections() {
         <div>${i < courseData.sections.length - 1 ? '<button class="btn" onclick="markComplete('+i+');navigateTo('+(i+1)+')">下一章 →</button>' : '<button class="btn btn-success" id="completeCourseBtn" onclick="tryCompleteCourse('+i+')">✓ 完成课程</button>'}</div>
       </div>
     </div>`).join('');
+    // 首次渲染后初始化第2章离线演练UI（进度条/关卡卡）
+    if (typeof updateDrillUI === 'function') updateDrillUI();
 }
 function renderChapterQuiz(chIdx) {
   const qs = chapterQuizzes[chIdx];
@@ -1228,7 +762,7 @@ function renderChapterQuiz(chIdx) {
         </div>`).join('')}
         <div style="text-align:center;margin-top:8px;padding:12px;background:${chapterQuizDone[chIdx]?'#ecfdf5':'#f8fafc'};border-radius:8px;font-size:14px;">
           ${chapterQuizDone[chIdx] ? '<span style="color:#065f46;font-weight:600;">✅ 本章测验已全部通过！</span>' : '<span style="color:#64748b;">📋 请回答所有题目（答错可以重做）</span>'}
-          ${chIdx === 1 ? '<br><span style="font-size:13px;color:var(--text-secondary);">🤖 AI对话模拟综合考核：' + (drillIsPassed() ? '<span style="color:#065f46;font-weight:600;">✅ 已通过（' + drillAssessmentScore + '分）</span>' : '<span style="color:#92400e;">⏳ 待完成（需≥' + DRILL_PASS_SCORE + '分）</span>') + '</span>' : ''}
+          ${chIdx === 1 ? '<br><span style="font-size:13px;color:var(--text-secondary);">🎯 实战演练综合考核：' + (drillIsPassed() ? '<span style="color:#065f46;font-weight:600;">✅ 已通过（' + drillAssessmentScore + '分）</span>' : '<span style="color:#92400e;">⏳ 待完成（需≥' + DRILL_PASS_SCORE + '分）</span>') + '</span>' : ''}
         </div>
     </div>`;
 }
@@ -1339,7 +873,7 @@ function canNavigateTo(index) {
   if (index === 0) return { ok: true };
   for (let i = 1; i <= index; i++) {
     if (i <= 6 && !chapterQuizDone[i-1]) return { ok: false, msg: '请先完成第'+i+'章的所有测验题（全部答对）' };
-    if (i === 2 && !drillIsPassed()) return { ok: false, msg: '请先完成第2章的AI对话模拟练习，综合考核≥'+DRILL_PASS_SCORE+'分' };
+    if (i === 2 && !drillIsPassed()) return { ok: false, msg: '请先完成第2章的实战演练，综合考核≥'+DRILL_PASS_SCORE+'分' };
   }
   return { ok: true };
 }
@@ -1786,431 +1320,289 @@ function drillIsPassed() {
 
 // 渲染练习区 HTML
 function renderDrillHTML() {
-  return `
-    <div class="card drill-container" style="border-top:4px solid var(--accent);">
-      <h2 style="margin-bottom:8px;">🎮 实战演练：开场白 + 五大拒绝理由</h2>
-      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">按顺序完成 6 关，每关 ≥${DRILL_PASS_SCORE} 分通过；全部通过后提交综合考核评分（综合 ≥${DRILL_PASS_SCORE} 分解锁下一章）。</p>
-      <div id="drillProgress" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;"></div>
-      <div id="drillStageCard" style="padding:14px 16px;border-radius:10px;margin-bottom:14px;font-size:14px;line-height:1.7;"></div>
-      <div id="drillObjectiveCard" style="background:#f8fafc;padding:12px 14px;border-radius:10px;margin-bottom:14px;font-size:13px;color:var(--text-secondary);line-height:1.7;"></div>
-      <div id="drillChatArea" class="rp-history" style="display:block;max-height:400px;overflow-y:auto;border:1px solid var(--border);border-radius:10px;padding:12px;background:#fafafa;">
-        <div style="text-align:center;color:var(--text-secondary);padding:20px;font-size:13px;">👇 点击「开始练习」进入第 1 关：开场白练习</div>
-      </div>
-      <div id="drillTyping" style="display:none;margin-top:10px;font-size:13px;color:var(--text-secondary);">
-        <span>👩 AI 家长正在回应中</span>
-        <div class="typing-dots"><span></span><span></span><span></span></div>
-      </div>
-      <div id="drillInputRow" style="margin-top:12px;">
-        <textarea class="rp-input" id="drillInput" placeholder="点击「开始练习」后输入你的话...（Ctrl+Enter 发送）" disabled></textarea>
-        <div class="rp-actions" style="margin-top:10px;">
-          <button class="btn" id="drillStartBtn" onclick="startDrillScene()">🎬 开始练习</button>
-          <button class="btn" id="drillSendBtn" onclick="submitDrillMessage()" style="display:none;">发送消息</button>
-          <button class="btn btn-outline" id="drillEndBtn" onclick="endDrillScene()" style="display:none;">🏁 结束本关 & 评分</button>
-          <button class="btn btn-outline" id="drillResetBtn" onclick="resetDrillScene()">🔄 重做本关</button>
-        </div>
-      </div>
-      <div id="drillFeedback" style="display:none;"></div>
-      <div id="drillAssessmentArea" style="display:none;margin-top:16px;padding-top:16px;border-top:2px dashed var(--border);"></div>
-    </div>
-  `;
+  return `<div class="card" style="border-top:4px solid var(--primary);"><h2>🎬 实战演练（离线点选模式）</h2><p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">按顺序完成 6 关，每关 ≥${DRILL_PASS_SCORE} 分通过；全部通过后综合考核自动计分（6关平均 ≥${DRILL_PASS_SCORE} 分解锁下一章）。<b>全程离线可用，无需网络与AI。</b></p><div id="drillProgress"></div><div id="drillStageCard"></div><div id="drillChatArea"></div><div id="drillOptionsArea"></div><div id="drillFeedbackArea"></div><div id="drillStageNav" style="margin-top:14px;"></div><div id="drillAssessmentArea" style="display:none;margin-top:16px;padding-top:16px;border-top:2px dashed var(--border);"></div></div>`;
 }
 
-// 更新进度条、当前场景标注、目标提示、综合考核区
+// ===== 离线演练数据（分支点选式）=====
+const offlineDrillScenes = [
+  { id:'o1', label:'开场白练习', short:'开场白',
+    scenario:'你是一位课程顾问（CC），第一次致电台湾家长，为小朋友安排数学思维试听课。家长之前在FB粉专为6岁女儿（幼稚园大班）申请了试听。每轮听家长说一句，从候选话术中选出最合适的一句——首次选择计入得分。',
+    objective:'完成开场白三步法：表明身份 → 告知来电目的 → 让家长感觉有帮助，并争取提问授权',
+    rounds:[
+      { parent:'喂，你好，请问是哪位？', options:[
+        { text:'我是XX公司的销售，想跟您推荐一个很棒的课程。', fb:'一上来就推销，家长会立刻挂断。开场白第一步是表明身份、拉近距离。' },
+        { text:'妈妈您好，我是VIP THINK的X老师，有看到您在FB粉专为小朋友申请了数学思维试听课，我是专门负责对接的顾问老师。', best:true, fb:'✅ 表明身份 + 来电来源——家长知道你是谁、为什么打来，防备心会下降。' },
+        { text:'阿姨你好～请问小朋友最近数学成绩怎么样呀？', fb:'还没表明身份就问成绩，家长防备心会更重，对话容易变成查户口。' } ] },
+      { parent:'哦对，我之前是有填过资料，怎么了吗？', options:[
+        { text:'是这样的，为了给小朋友安排最合适的老师和课件，想跟您了解一下小朋友的基本情况，大概10分钟左右，您现在方便吗？', best:true, fb:'✅ 来电目的 + 提问授权——让家长感觉有帮助，也争取到了了解情况的机会。' },
+        { text:'就是跟您确认一下试听的事情，您先听我说就好。', fb:'「您先听我说」没有给家长选择权，也解释不了为什么要了解情况。' },
+        { text:'没什么大事，就是通知您试听课的时间，到时来上课就行。', fb:'只做通知员，错过了挖需的黄金窗口，这通电话就白打了。' } ] },
+      { parent:'嗯……可以啊，你想了解什么？', options:[
+        { text:'小朋友叫什么名字？几年级？平时成绩怎么样？数学好不好？', fb:'连珠炮式查户口——全是封闭问题，家长只会给短答案。' },
+        { text:'先简单确认下基本信息——小朋友叫○○对吧？今年6岁上大班，平时性格是比较活泼还是慢热一点呀？', best:true, fb:'✅ 自然过渡的基本信息确认，封闭核实+开放了解，为挖需做好铺垫。' },
+        { text:'您为什么想给小朋友报数学班呢？是不是成绩不太好？', fb:'一上来就戳焦虑点，「是不是」封闭式提问还容易冷场。' } ] },
+      { parent:'她叫小美，挺活泼的，不过没学过数学。', options:[
+        { text:'好的记下来了～活泼的孩子课堂互动更有优势！为了给她配一位合适的老师，我再了解一下她平时的学习情况哈。', best:true, fb:'✅ 肯定家长描述 + 自然过渡到学习经历——顺势进入挖需。' },
+        { text:'没学过数学啊，那基础可能不太好喔。', fb:'语气负面，容易让家长觉得孩子在被评判，信任感下降。' },
+        { text:'好的，那试听课就安排明天早上8点，记得准时上线。', fb:'还没挖需就直接定时间——家长容易拒绝，也没有给「为什么是明天」的理由。' } ] } ] },
+  { id:'o2', label:'异议处理：没时间', short:'没时间',
+    scenario:'家长是双职工，晚上6点多才到家，觉得没时间安排试听课。口诀：理解 → 价值 → 引导 → 坚持，不展开。',
+    objective:'先接住「没时间」的情绪，再把线上课的便利性讲透，最后用二选一收口',
+    rounds:[
+      { parent:'我们最近太忙了，真的没时间上试听课呀……', options:[
+        { text:'忙什么呀，试听课才40分钟而已。', fb:'反问式顶撞——家长感觉被指责，对话直接变对立。口诀第一步是「理解」。' },
+        { text:'特别能理解！双职工家庭时间确实紧张。所以才安排线上上课，就是为了节约小朋友的时间，高效学习。', best:true, fb:'✅ 口诀第一步「理解」——先接住情绪，再自然带出线上课的价值。' },
+        { text:'那你们什么时候有空？我再联系您。', fb:'直接放弃本次触达，主动权全交出去，这通电话没有推进。' } ] },
+      { parent:'线上课也要盯着，来来回回折腾的。', options:[
+        { text:'不会啊，很简单的，您点两下就行了。', fb:'「不会啊」直接否定家长感受，容易把家长顶回去。' },
+        { text:'那您可以等有时间了再说哈。', fb:'顺着家长往后拖，本通电话没有推进，试听大概率泡汤。' },
+        { text:'其实操作比您想的简单——提前下载APP就好，课前我会在Line提醒您，我们提前5分钟进教室，您只需帮小朋友把设备打开。', best:true, fb:'✅ 把「麻烦」拆解成具体、轻量的动作，降低心理门槛。' } ] },
+      { parent:'嗯……那倒是，不过真的抽不出整块时间。', options:[
+        { text:'课程时间只需要40分钟，比如您6点多到家，可以安排19:20或20:10，周中实在不行也可以安排周末。您看明天X点还是X点方便？', best:true, fb:'✅ 具体时段 + 二选一收口——口诀的「引导」和「坚持，不展开」。' },
+        { text:'那您看什么时候方便跟我说一下？', fb:'开放式问时间，家长说「再看看」就凉了；要用二选一收口。' },
+        { text:'那就这样吧，您考虑好了再联系我。', fb:'彻底放走，前面的铺垫全浪费了。' } ] },
+      { parent:'明天晚上8点吧，我尽量。', options:[
+        { text:'好的！那我先帮小朋友把明晚8点的课锁定，安排一位引导型老师。课前我会Line提醒您，记得提前10分钟登入APP哈。', best:true, fb:'✅ 确认约课结果 + 预告下一步动作（Line提醒）——加深印象、提高出席率。' },
+        { text:'好的，那明天见。', fb:'收尾太仓促：没有确认动作、没有预告提醒，出席率会掉。' },
+        { text:'您可要准时喔，老师都等着呢。', fb:'施加压力式的收尾，让家长有负担感。' } ] } ] },
+  { id:'o3', label:'异议处理：小朋友不喜欢', short:'不喜欢',
+    scenario:'家长觉得小朋友不喜欢数学，试了也没用。口诀：理解 → 价值 → 引导 → 坚持，不展开。',
+    objective:'理解 + 回顾申请初心 + 讲具体课程价值（互动密集）+ 引导型老师 + 二选一收口',
+    rounds:[
+      { parent:'我家小朋友不喜欢数学，试了也没用的……', options:[
+        { text:'不喜欢数学那更要学啊，不然怎么办？', fb:'火上浇油——家长会直接挂电话。永远先「理解」。' },
+        { text:'可以理解，相信您之前申请试听也是想培养下小朋友的兴趣，但这肯定需要一个过程。', best:true, fb:'✅ 理解 + 回顾申请初心——把家长拉回「当初为什么申请」的同一场域。' },
+        { text:'很多小朋友刚开始都不喜欢，后来都爱上了。', fb:'空泛的口头承诺，没有具体价值支撑，说服力弱。' } ] },
+      { parent:'年纪太小了，坐不住的。', options:[
+        { text:'我们的课程是动画+闯关式互动，全程抓住小朋友注意力；小班制老师会主动引导互动。咱们先帮他迈开第一步，我安排一位引导性较强的老师让他先感受下。', best:true, fb:'✅ 讲具体课程价值（互动密集）+ 给「引导型老师」的具体方案。' },
+        { text:'坐不住就说明专注力不行，更要训练了。', fb:'给孩子贴负面标签，家长听着不舒服，对立感上升。' },
+        { text:'大部分小朋友上两次就坐得住了。', fb:'又是空泛保证，没有任何证据支撑。' } ] },
+      { parent:'那就试试吧，但是效果不好我就退。', options:[
+        { text:'没问题！试听课是免费的，正好可以让小朋友先感受一下。您看我们安排在明天的X点或者X点可以吧？', best:true, fb:'✅ 强调零成本试错 + 二选一收口——顺着家长的话往前推一步。' },
+        { text:'我们的课效果非常好，不存在退的情况。', fb:'把「退」的话题顶回去，徒增对立，对成单没有任何帮助。' },
+        { text:'退的话要走很多流程的喔。', fb:'用流程吓唬家长，信任感直接崩塌。' } ] },
+      { parent:'行，那就明天下午吧。', options:[
+        { text:'好嘞！明天下午X点，我Line发您上课指引。小朋友第一次上课难免紧张，您多鼓励、上课过程不打扰哈。', best:true, fb:'✅ 确认 + 预防针（降低期待）+ Line预告——为试听体验铺路。' },
+        { text:'好的，记得准时来上课。', fb:'没有确认具体时间、没有预告提醒动作，出席率和体验都会打折。' },
+        { text:'那明天试听完我们聊聊报课的事。', fb:'还没上课就预告推销，家长会后悔答应试听。' } ] } ] },
+  { id:'o4', label:'异议处理：报其他班了', short:'报班了',
+    scenario:'家长说已经报了其他数学班。报班家庭正是精准客户——先认可，再给「不影响现有课程」的试听理由。',
+    objective:'认可家长投入 → 试听课=测评课 → 40分钟轻量 + 108课纲价值 → 二选一收口',
+    rounds:[
+      { parent:'我们已经报了其他数学班了，暂时不考虑了……', options:[
+        { text:'明白！看得出来您对小朋友的学习非常重视。方便问下小朋友是在外面上课还是线上课吗？', best:true, fb:'✅ 先认可再了解现状——不急于推销，才聊得下去。' },
+        { text:'哪个班？效果怎么样？我们这边比他们强多了。', fb:'贬低同行 + 审问式追问，家长会立刻反感。' },
+        { text:'报了就报了呗，那不打扰了。', fb:'直接放弃——报班家庭恰恰是最精准的客户。' } ] },
+      { parent:'在外面上的，一周两次。', options:[
+        { text:'线下班坚持下来不容易喔！我们这节课是免费的，也是一节测评课，可以对小朋友的数学水平做全方位评估，正好检验一下现在的学习效果。', best:true, fb:'✅ 试听课=测评课——给一个「不影响现有课程」的试听理由。' },
+        { text:'线下班效果一般般啦，很多孩子都转线上课了。', fb:'贬低家长已经做的选择，等于说家长判断失误。' },
+        { text:'那您再报一个，两边一起学效果更好。', fb:'加码推销，家长压力大，容易被拉黑。' } ] },
+      { parent:'测评课？听起来还行……但是怕小朋友累。', options:[
+        { text:'就一节课40分钟，数学难度逐步加大，课程贴合108课纲的难度和要求，还有思维拓展方面的训练。您看明天下午还是晚上方便试听？', best:true, fb:'✅ 40分钟轻量 + 108课纲价值 + 二选一收口。' },
+        { text:'那我们周末再约吧。', fb:'时间往后拖，热度会凉，出席率掉。' },
+        { text:'累什么呀，才40分钟而已。', fb:'又把家长顶回去——「怕累」是感受，先接住再讲价值。' } ] },
+      { parent:'那就明天晚上吧，就试一节哈。', options:[
+        { text:'好的，就试一节，体验完您再决定～我Line发您上课指引，明晚X点见！', best:true, fb:'✅ 顺着家长「就试一节」降低压力，确认 + Line预告收尾。' },
+        { text:'试听完如果您满意，我们要谈一下报课套餐喔。', fb:'还没上课就预告推销，家长会后悔答应试听。' },
+        { text:'好的，那您别忘了时间。', fb:'把守时责任推给家长，没有预告自己的提醒动作。' } ] } ] },
+  { id:'o5', label:'异议处理：没有领课/免费担心', short:'免费担心',
+    scenario:'家长担心免费课质量不行，或者根本没领过课、没印象。核心回应：试听课=测评课。',
+    objective:'回应「免费=低质」疑虑 + 给可验证的老师信息 + 趁热二选一收口',
+    rounds:[
+      { parent:'免费的会不会质量不行啊？我没领过这个课……', options:[
+        { text:'这个没关系，我们这节课不仅是一节试听课，也是一节测评课，可以对小朋友的数学水平进行一个全方位评估。', best:true, fb:'✅ 直接回应「免费=低质」疑虑：试听课=测评课，有实实在在的产出。' },
+        { text:'免费是公司活动，羊毛不薅白不薅。', fb:'把课程说成薅羊毛，等于自己贬低课程价值。' },
+        { text:'质量肯定比付费的还好，不然怎么会免费送。', fb:'夸张承诺反而显得心虚，家长更不信。' } ] },
+      { parent:'那老师是什么水平的？', options:[
+        { text:'我们的老师都是非常优秀的老师，上课前我会把老师的介绍和课件内容发您，您可以先看看是否满意。', best:true, fb:'✅ 给可验证的信息（老师介绍+课件内容），让家长自己确认，而不是空口背书。' },
+        { text:'都是名校毕业的，您放心就好。', fb:'空泛背书，没有任何可感的具体信息。' },
+        { text:'免费课就是普通老师上课啦。', fb:'就算部分属实，这种说法也等于当场劝退。' } ] },
+      { parent:'嗯……那先试试看？', options:[
+        { text:'好的！您也可以正好检验一下小朋友目前的学习效果。您看帮小朋友安排在明天的X点或者X点测试一下？', best:true, fb:'✅ 趁热打铁，用「检验学习效果」强化价值，二选一收口。' },
+        { text:'您考虑好了随时联系我。', fb:'收口太软——可能就真的没有后续了。' },
+        { text:'那我帮您约到下周？', fb:'约得太远，热度会凉，出席率掉。' } ] },
+      { parent:'明天晚上8点吧。', options:[
+        { text:'好的！明晚8点，我稍后在Line把老师介绍和上课指引发您，有任何问题随时找我，我都在的哈。', best:true, fb:'✅ 确认 + Line预告 + 留下「我都在」的联系感。' },
+        { text:'好的。', fb:'一个字的收尾，没有任何下一步动作和印象加深。' },
+        { text:'明天记得准时上课喔。', fb:'把责任推给家长，没有自己的预告动作。' } ] } ] },
+  { id:'o6', label:'异议处理：再考虑/商量', short:'再考虑',
+    scenario:'家长说要再考虑、要跟家人商量。口诀：不施压 + 给「先试听再商量更有依据」的新理由 + 选择式收口。',
+    objective:'不施压 → 预防针（适应线上课）→ 选择式提问收口 → 确认+礼貌收尾',
+    rounds:[
+      { parent:'我再考虑一下，跟孩子爸爸商量……', options:[
+        { text:'这有什么好商量的，试听又不要钱。', fb:'否定家长的决策习惯，显得Pushy，家长会更抗拒。' },
+        { text:'理解理解～跟家人商量是应该的！不过体验一次又不花钱，试了才知道适不适合，商量起来也更有依据呀。', best:true, fb:'✅ 不施压 + 给「先试听再商量更有依据」的新理由。' },
+        { text:'那您商量好了跟我说一声。', fb:'主动权全交出去，本通电话没有任何推进。' } ] },
+      { parent:'主要是怕小朋友适应不了线上课。', options:[
+        { text:'小朋友第一次接触线上直播，有一些不适应是正常的哈。这节课主要让小朋友感受一下课程形式，难易不用太在意，老师会主动引导互动。', best:true, fb:'✅ 预防针式回应——降低期待 + 给「老师会引导」的适应方案。' },
+        { text:'适应不了的很少见啦，您家小朋友肯定没问题。', fb:'打包票——一旦真不适应，信任就崩了。' },
+        { text:'适应不了可以退款呀。', fb:'又把退款挂嘴边，负面暗示太多。' } ] },
+      { parent:'嗯……那先排一节看看。', options:[
+        { text:'好的！明后天哪个时间段比较方便呢？上午、下午还是晚上？', best:true, fb:'✅ 用选择式提问收口——把「考虑」变成「排课」。' },
+        { text:'那您想好了告诉我。', fb:'开放式+被动等待，对话到这里就死了。' },
+        { text:'越早约越好喔，名额很有限的。', fb:'稀缺感用得太生硬，家长会警觉被套路。' } ] },
+      { parent:'那就明天晚上7点半吧。', options:[
+        { text:'好的！明晚7点半，课前我会提前Line提醒您。商量的事不着急，体验完您和家人再决定哈，拜拜～', best:true, fb:'✅ 确认 + 预告提醒 + 再次降低决策压力，礼貌收尾。' },
+        { text:'好的，明天试听完记得跟我说结果喔。', fb:'施压感——把「试听」和「成交结果」绑得太紧。' },
+        { text:'好的，那明天见。', fb:'收尾仓促，没有预告提醒动作。' } ] } ] }
+];
+
+let drillRoundIdx = 0;   // 当前轮次
+let drillPicks = [];     // 当前场景每轮首次选择的选项索引
+let drillActive = false; // 场景是否已开始
+
+function renderOfflineOptions(retryMode) {
+  const stage = offlineDrillScenes[drillCurrentScene];
+  const round = stage.rounds[drillRoundIdx];
+  return '<div style="display:flex;flex-direction:column;gap:8px;margin-top:10px;">' + round.options.map(function(o,i){
+    const picked = retryMode && drillPicks[drillRoundIdx] === i;
+    return '<button class="btn btn-outline" style="text-align:left;white-space:normal;' + (picked?'opacity:0.45;text-decoration:line-through;':'') + '" ' + (picked?'disabled':'') + ' onclick="pickOfflineOption(' + i + ')"><b>话术 ' + 'ABCD'[i] + '：</b>' + o.text + '</button>';
+  }).join('') + '</div>';
+}
+
+function renderOfflineRound() {
+  const stage = offlineDrillScenes[drillCurrentScene];
+  const round = stage.rounds[drillRoundIdx];
+  const chat = document.getElementById('drillChatArea');
+  const opts = document.getElementById('drillOptionsArea');
+  const fb = document.getElementById('drillFeedbackArea');
+  const nav = document.getElementById('drillStageNav');
+  let log = '<div style="padding:14px;background:#f8fafc;border-radius:10px;margin-bottom:12px;"><h3 style="margin-bottom:6px;">' + stage.label + ' · 第 ' + (drillRoundIdx+1) + ' / ' + stage.rounds.length + ' 轮</h3><p style="font-size:13px;color:var(--text-secondary);line-height:1.8;">' + stage.scenario + '</p></div>';
+  for (let r = 0; r <= drillRoundIdx; r++) {
+    const rd = stage.rounds[r];
+    log += '<div class="chat-msg parent"><div class="chat-avatar">家</div><div class="chat-content"><div class="chat-label">家长</div><div class="chat-bubble">' + rd.parent + '</div></div></div>';
+    const pick = drillPicks[r];
+    if (pick !== undefined) {
+      const chosen = rd.options[pick];
+      const mark = pick === rd.best ? ' ✓' : ' ✗';
+      log += '<div class="chat-msg cc"><div class="chat-avatar">CC</div><div class="chat-content"><div class="chat-label">课程顾问 · CC（你的选择' + mark + '）</div><div class="chat-bubble">' + chosen.text + '</div></div></div>';
+    }
+  }
+  if (drillPicks[drillRoundIdx] === undefined) {
+    log += '<div class="chat-msg system" style="justify-content:center"><div class="chat-bubble">👆 请从下面选出你的下一句话（首次选择计入得分）</div></div>';
+  }
+  chat.innerHTML = log;
+  if (drillPicks[drillRoundIdx] === undefined) {
+    opts.innerHTML = renderOfflineOptions(false);
+    fb.innerHTML = ''; nav.innerHTML = '';
+    return;
+  }
+  const pickedOpt = round.options[drillPicks[drillRoundIdx]];
+  const isBest = !!(pickedOpt && pickedOpt.best);
+  if (isBest) {
+    fb.innerHTML = '<div style="margin-top:10px;padding:12px;background:#ecfdf5;border-radius:10px;border-left:4px solid #059669;"><strong>✅ 选对了</strong><p style="margin-top:6px;font-size:13px;line-height:1.8;">' + round.options[drillPicks[drillRoundIdx]].fb + '</p></div>';
+    if (drillRoundIdx + 1 < stage.rounds.length) {
+      opts.innerHTML = '<button class="btn" style="margin-top:10px;" onclick="nextOfflineRound()">➡️ 下一轮</button>';
+      nav.innerHTML = '';
+    } else {
+      opts.innerHTML = ''; nav.innerHTML = '';
+      finishOfflineScene();
+    }
+  } else {
+    opts.innerHTML = renderOfflineOptions(true);
+    fb.innerHTML = '<div style="margin-top:10px;padding:12px;background:#fef2f2;border-radius:10px;border-left:4px solid #ef4444;"><strong>❌ 这句话不太合适</strong><p style="margin-top:6px;font-size:13px;line-height:1.8;">' + round.options[drillPicks[drillRoundIdx]].fb + '</p><p style="font-size:12px;color:var(--text-secondary);margin-top:6px;">首次选择已计入得分——再从剩下的选项里选一次，看家长会怎么回应。</p></div>';
+    nav.innerHTML = '';
+  }
+}
+
+function pickOfflineOption(oi) {
+  const stage = offlineDrillScenes[drillCurrentScene];
+  if (drillPicks[drillRoundIdx] === undefined) drillPicks[drillRoundIdx] = oi;
+  saveProgress();
+  renderOfflineRound();
+}
+
+function nextOfflineRound() {
+  drillRoundIdx++;
+  saveProgress();
+  renderOfflineRound();
+}
+
+function finishOfflineScene() {
+  const stage = offlineDrillScenes[drillCurrentScene];
+  const best = drillPicks.filter(function(p, r){ var o = stage.rounds[r] && stage.rounds[r].options[p]; return !!(o && o.best); }).length;
+  const score = Math.round(best / stage.rounds.length * 100);
+  drillSceneScores[drillCurrentScene] = Math.max(drillSceneScores[drillCurrentScene] || 0, score);
+  if (score >= DRILL_PASS_SCORE) drillSceneDone[drillCurrentScene] = true;
+  saveProgress();
+  const chat = document.getElementById('drillChatArea');
+  const opts = document.getElementById('drillOptionsArea');
+  const fb = document.getElementById('drillFeedbackArea');
+  const nav = document.getElementById('drillStageNav');
+  const pass = drillSceneDone[drillCurrentScene];
+  chat.innerHTML = '<div style="text-align:center;padding:20px;"><div class="score-circle ' + (score>=80?'high':pass?'medium':'low') + '" style="width:90px;height:90px;font-size:34px;margin:0 auto;">' + score + '</div><p style="margin-top:10px;font-size:16px;font-weight:700;">' + stage.label + '：' + (score>=80?'优秀':pass?'通过':'未通过') + '（' + best + '/' + stage.rounds.length + ' 轮首次即选对）</p><p style="font-size:13px;color:var(--text-secondary);margin-top:4px;">' + (pass ? '✅ ≥' + DRILL_PASS_SCORE + '分，本关通过！' : '❌ 未达' + DRILL_PASS_SCORE + '分，建议重做本关加深印象') + '</p></div>';
+  opts.innerHTML = ''; fb.innerHTML = '';
+  const nextIdx = drillCurrentScene + 1;
+  nav.innerHTML = '<button class="btn btn-outline" onclick="resetDrillScene()">🔄 重做本关</button>' + (nextIdx < offlineDrillScenes.length ? ' <button class="btn" onclick="switchDrillScene(' + nextIdx + ')" ' + (drillSceneDone[drillCurrentScene] ? '' : 'disabled') + '>➡️ 下一关</button>' : '');
+}
+
 function updateDrillUI() {
   const prog = document.getElementById('drillProgress');
-  if (prog) {
-    prog.innerHTML = drillScenes.map((s, i) => {
-      const done = drillSceneDone[i];
-      const cur = i === drillCurrentScene;
-      const unlocked = i === 0 || drillSceneDone[i-1];
-      let bg = '#e2e8f0', color = '#64748b', icon = '🔒';
-      if (done) { bg = '#059669'; color = '#fff'; icon = '✓'; }
-      else if (cur && unlocked) { bg = 'var(--primary)'; color = '#fff'; icon = i+1; }
-      else if (unlocked) { bg = '#93c5fd'; color = '#fff'; icon = i+1; }
-      const score = drillSceneScores[i] > 0 ? ` <span style="font-size:10px;opacity:0.9;">${drillSceneScores[i]}分</span>` : '';
-      return `<span style="font-size:11px;padding:4px 8px;border-radius:10px;background:${bg};color:${color};white-space:nowrap;${unlocked ? 'cursor:pointer;' : ''}" ${unlocked ? `onclick="switchDrillScene(${i})"` : ''}>${icon} ${s.label}${score}</span>`;
-    }).join('');
-  }
-  const stage = drillScenes[drillCurrentScene];
-  const stageCard = document.getElementById('drillStageCard');
-  if (stageCard) {
-    const tag = stage.type === 'opening' ? '🎙️ 当前练习：开场白' : '🛑 当前练习：异议处理 · 拒绝理由【' + stage.objectionType + '】';
-    const passed = drillSceneDone[drillCurrentScene] ? ' <span style="background:#059669;color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;">✓ 已通过</span>' : '';
-    stageCard.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;"><strong>${tag}</strong><span style="background:#dbeafe;color:var(--primary-dark);padding:3px 10px;border-radius:10px;font-size:12px;font-weight:600;">${stage.stageLabel}</span>${passed}</div>`;
-    stageCard.style.background = stage.type === 'opening' ? 'linear-gradient(135deg,#e3f2fd,#f3e5f5)' : 'linear-gradient(135deg,#fef2f2,#ffe4e6)';
-    stageCard.style.borderLeft = '4px solid ' + (stage.type === 'opening' ? 'var(--primary)' : 'var(--danger)');
-  }
-  const objCard = document.getElementById('drillObjectiveCard');
-  if (objCard) {
-    objCard.innerHTML = `<strong>🎯 本关目标：</strong>${stage.objective}<br><strong>👉 下一关：</strong>${stage.nextStage}`;
-  }
-  const assessArea = document.getElementById('drillAssessmentArea');
-  if (assessArea) {
-    const allDone = drillSceneDone.every(d => d);
-    drillAllPassed = allDone;
-    if (allDone && !drillAssessmentSubmitted) {
-      assessArea.style.display = 'block';
-      assessArea.innerHTML = `<div style="text-align:center;padding:12px;background:#fffbeb;border-radius:10px;border:2px solid #fcd34d;">
-        <p style="font-size:15px;font-weight:700;color:#92400e;margin-bottom:8px;">🎉 恭喜完成全部 6 关练习！</p>
-        <p style="font-size:13px;color:#92400e;margin-bottom:12px;">请提交全部对话记录进行综合考核评分，综合 ≥${DRILL_PASS_SCORE} 分即可解锁下一章。</p>
-        <button class="btn" id="drillSubmitBtn" onclick="submitDrillAssessment()">📤 提交对话记录进行综合考核</button>
-      </div>`;
-    } else if (allDone && drillAssessmentSubmitted) {
-      assessArea.style.display = 'block';
-      const pass = drillIsPassed();
-      assessArea.innerHTML = `<div style="text-align:center;padding:12px;background:${pass ? '#ecfdf5' : '#fef2f2'};border-radius:10px;border:2px solid ${pass ? '#059669' : '#dc2626'};">
-        <p style="font-size:15px;font-weight:700;color:${pass ? '#065f46' : '#991b1b'};">📊 综合考核得分：${drillAssessmentScore} 分（${pass ? '✅ 通过' : '❌ 未达标（需≥' + DRILL_PASS_SCORE + '分）'}）</p>
-        <p style="font-size:13px;color:${pass ? '#065f46' : '#991b1b'};margin-top:6px;">${pass ? '已解锁下一章！' : '未达标，可重做任一关卡后重新提交。'}</p>
-        <button class="btn" onclick="resetDrillScene()" style="margin-top:10px;">🔄 重做关卡</button>
-        <button class="btn btn-success" id="drillSubmitBtn" onclick="submitDrillAssessment()" style="margin-top:10px;margin-left:8px;">📤 重新提交综合考核</button>
-      </div>`;
-    } else {
-      assessArea.style.display = 'none';
-    }
-  }
-}
-
-// 开始当前场景
-async function startDrillScene() {
-  const scene = drillScenes[drillCurrentScene];
-  drillExchangeCount = 0;
-  drillConversation = [];
-  // 提前启用输入框与切换按钮（即便后续异常也不阻塞用户）
-  const input0 = document.getElementById('drillInput');
-  if (input0) { input0.disabled = false; input0.value = ''; input0.placeholder = '输入你的话...（Ctrl+Enter 发送）'; }
-  const startBtn0 = document.getElementById('drillStartBtn');
-  if (startBtn0) startBtn0.style.display = 'none';
-  const sendBtn0 = document.getElementById('drillSendBtn');
-  if (sendBtn0) sendBtn0.style.display = '';
-  const endBtn0 = document.getElementById('drillEndBtn');
-  if (endBtn0) endBtn0.style.display = '';
-  // 显示 AI 家长开场白（必须）
+  if (!prog) return;
+  prog.innerHTML = '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;">' + offlineDrillScenes.map(function(s, i){
+    const done = drillSceneDone[i], cur = i === drillCurrentScene, unlocked = i === 0 || drillSceneDone[i-1];
+    const bg = done ? '#059669' : cur ? 'var(--primary)' : unlocked ? '#f1f5f9' : '#e2e8f0';
+    const col = (done || cur) ? '#fff' : '#64748b';
+    const score = drillSceneScores[i] > 0 ? ' <span style="font-size:10px;">' + drillSceneScores[i] + '分</span>' : '';
+    const click = unlocked ? 'onclick="switchDrillScene(' + i + ')" style="cursor:pointer;' : 'style="cursor:default;';
+    return '<span ' + click + 'background:' + bg + ';color:' + col + ';padding:6px 12px;border-radius:16px;font-size:12px;font-weight:600;">第' + (i+1) + '关 ' + s.short + score + (done ? ' ✓' : '') + '</span>';
+  }).join('') + '</div>';
+  const stage = offlineDrillScenes[drillCurrentScene];
   const chat = document.getElementById('drillChatArea');
-  if (chat) {
-    chat.innerHTML = `<div class="rp-history-item parent">👩 AI 家长：${scene.openingLine}</div>`;
-    chat.scrollTop = chat.scrollHeight;
+  const opts = document.getElementById('drillOptionsArea');
+  const fb = document.getElementById('drillFeedbackArea');
+  const nav = document.getElementById('drillStageNav');
+  const assess = document.getElementById('drillAssessmentArea');
+  if (!drillActive) {
+    chat.innerHTML = '<div style="padding:16px;background:#f8fafc;border-radius:10px;"><h3 style="margin-bottom:8px;">' + stage.label + '</h3><p style="font-size:14px;line-height:1.8;">' + stage.scenario + '</p><div class="highlight-box" style="margin-top:10px;"><strong>🎯 目标：</strong>' + stage.objective + '</div><p style="font-size:12px;color:var(--text-secondary);margin-top:8px;">共 ' + stage.rounds.length + ' 轮，每轮从候选话术中选出最合适的一句（首次选择计入得分，选错可再选但会扣分）。</p></div>';
+    opts.innerHTML = ''; fb.innerHTML = '';
+    nav.innerHTML = '<button class="btn" id="drillStartBtn" onclick="startDrillScene()">🎬 开始练习</button>' + (drillSceneDone[drillCurrentScene] ? ' <span style="color:#059669;font-weight:600;font-size:13px;">本关已通过（' + drillSceneScores[drillCurrentScene] + '分），可重做刷新成绩</span>' : '');
+  } else {
+    renderOfflineRound();
   }
-  drillConversation.push({ role: 'parent', content: scene.openingLine });
-  // 自动聚焦输入框（用 setTimeout 避免某些浏览器阻止 focus）
-  if (input0) setTimeout(() => { input0.focus(); }, 50);
-  if (typeof showToast === 'function') showToast('📞 练习开始！请完成「' + scene.label + '」', 'success');
-}
-
-// 发送消息
-async function submitDrillMessage() {
-  const input = document.getElementById('drillInput');
-  if (!input) return;
-  const text = input.value.trim();
-  if (!text) { if (typeof showToast === 'function') showToast('请输入说话内容', 'warning'); return; }
-  input.disabled = true;
-  const chat = document.getElementById('drillChatArea');
-  chat.innerHTML += `<div class="rp-history-item user">🧑‍🏫 你：${text.replace(/</g,'&lt;')}</div>`;
-  chat.scrollTop = chat.scrollHeight;
-  drillConversation.push({ role: 'user', content: text });
-  drillExchangeCount++;
-  const typing = document.getElementById('drillTyping');
-  if (typing) typing.style.display = 'flex';
-  // 发送按钮实时计时，让用户知道 AI 正在回复（而非卡住）
-  const sendBtn = document.getElementById('drillSendBtn');
-  const sendStart = Date.now();
-  let sendTimer = setInterval(() => {
-    if (sendBtn && sendBtn.disabled) {
-      const el = Math.floor((Date.now() - sendStart) / 1000);
-      sendBtn.textContent = `等待 AI 回复... (${el}s)`;
-    } else { clearInterval(sendTimer); }
-  }, 1000);
-  let parentReply = '好的，请继续。';
-  let aiUsed = false;
-  try {
-    if (!checkStudentLimit()) {
-      if (typeof showToast === 'function') showToast('⚠️ 本小时练习次数已达上限，请稍后再试', 'warning');
-    } else {
-      const backendOK = await checkBackendHealth();
-      if (backendOK) {
-        try { parentReply = await callDrillParentAI(text); aiUsed = true; }
-        catch (err) { console.warn('AI家长回复失败:', err.message); if (typeof showToast === 'function') showToast('⚠️ ' + err.message, 'warning'); }
-      } else {
-        if (typeof showToast === 'function') showToast('⚠️ AI 服务暂时不可用，本次回复为占位文案。点击「重做本关」可重试', 'warning');
-      }
-    }
-    const label = aiUsed ? '🤖 AI 家长' : '👩 家长（占位回复）';
-    chat.innerHTML += `<div class="rp-history-item parent">${label}：${parentReply.replace(/</g,'&lt;')}</div>`;
-    chat.scrollTop = chat.scrollHeight;
-    drillConversation.push({ role: 'parent', content: parentReply, aiUsed: aiUsed });
-  } finally {
-    if (typing) typing.style.display = 'none';
-    input.value = '';
-    input.disabled = false;
-    if (sendBtn) { sendBtn.textContent = '发送消息'; sendBtn.disabled = false; }
-    input.focus();
-    clearInterval(sendTimer);
+  const allDone = drillSceneDone.every(function(d){ return d; });
+  if (allDone) {
+    assess.style.display = 'block';
+    if (!drillAssessmentSubmitted) computeOfflineAssessment();
+    renderOfflineAssessment();
+  } else {
+    assess.style.display = 'none';
   }
 }
 
-// 调用 AI 获取当前场景家长回复
-async function callDrillParentAI(userText) {
-  const scene = drillScenes[drillCurrentScene];
-  const messages = [ { role: 'system', content: scene.parentSystemPrompt } ];
-  const recentCount = Math.min(drillConversation.length - 1, 12);
-  const startIdx = Math.max(0, drillConversation.length - 1 - recentCount);
-  for (let i = startIdx; i < drillConversation.length - 1; i++) {
-    const m = drillConversation[i];
-    messages.push({ role: m.role === 'user' ? 'user' : 'assistant', content: m.content });
-  }
-  messages.push({ role: 'user', content: userText });
-  messages.push({ role: 'system', content: `【立即回应指令】
-CC 刚刚讲的是：「${userText.substring(0, 100)}${userText.length > 100 ? '...' : ''}」
-
-请以家长身份，针对这段话做出简短自然的台湾国语回应。
-- 听懂了就确认/追问细节
-- 没听清就说「不好意思」
-- **内容奇怪、乱码、数字串、或明显无意义 → 必须表示困惑：「你说什么？」「我不是很懂你的意思」**
-- **绝对不要讲「明白」「哦，知道了」之类敷衍对方**
-绝对不要背预设台词！只输出一句话回应。` });
-  const data = await callDeepSeek({ messages, model: DEEPSEEK_MODEL, max_tokens: 120, temperature: 0.3 }, 15000);
-  let reply = data.choices?.[0]?.message?.content?.trim();
-  if (!reply) throw new Error('AI 回应为空');
-  reply = reply.replace(/^["「『]|["」』]$/g, '').trim();
-  return reply || '好的';
+function startDrillScene() {
+  drillActive = true; drillRoundIdx = 0; drillPicks = [];
+  saveProgress(); updateDrillUI(); renderOfflineRound();
 }
-
-// 结束当前场景 & 评分
-async function endDrillScene() {
-  if (drillExchangeCount < 4) {
-    if (typeof showToast === 'function') showToast('⚠️ 对话轮数太少（最少4轮），请继续对话后再结束', 'warning');
-    return;
-  }
-  const endBtn = document.getElementById('drillEndBtn');
-  const sendBtn = document.getElementById('drillSendBtn');
-  const input = document.getElementById('drillInput');
-  if (endBtn) { endBtn.disabled = true; endBtn.textContent = '⏳ AI 评分中... (0s)'; }
-  if (sendBtn) sendBtn.disabled = true;
-  if (input) input.disabled = true;
-
-  // 实时计时器：让用户看到等待时长（防止以为卡死）
-  const startTime = Date.now();
-  let timerInterval = setInterval(() => {
-    const elapsed = Math.floor((Date.now() - startTime) / 1000);
-    if (endBtn && endBtn.disabled) {
-      endBtn.textContent = `⏳ AI 评分中... (${elapsed}s)`;
-    } else {
-      clearInterval(timerInterval);
-    }
-  }, 1000);
-
-  try { await evaluateDrillScene(); }
-  catch (err) {
-    console.error('评分失败:', err);
-    if (typeof showToast === 'function') showToast('❌ AI 评分失败：' + err.message + '，请点「重做本关」重试', 'error');
-    if (endBtn) { endBtn.disabled = false; endBtn.textContent = '🏁 结束本关 & 评分'; }
-    if (sendBtn) sendBtn.disabled = false;
-    if (input) input.disabled = false;
-  } finally {
-    clearInterval(timerInterval);
-  }
-}
-
-async function evaluateDrillScene() {
-  const scene = drillScenes[drillCurrentScene];
-  drillSceneConversations[drillCurrentScene] = drillConversation.slice(); // 保存本关对话供综合评分
-  const conversationText = drillConversation.map(m => `${m.role === 'user' ? '🧑‍🏫 CC' : '👩 AI家长'}：${m.content}`).join('\n');
-  const evalMessages = [
-    { role: 'system', content: scene.evaluatorSystemPrompt },
-    { role: 'user', content: `以下是学员在本场景的对话记录，请进行评分：\n\n${conversationText}\n\n共 ${drillExchangeCount} 轮对话。` }
-  ];
-  let data;
-  try {
-    // 18 秒超时：避免长时间等待，更快失败反馈
-    data = await callDeepSeek({ messages: evalMessages, model: DEEPSEEK_MODEL, max_tokens: 500, temperature: 0.3 }, 18000);
-  } catch (err) {
-    console.error('AI 评分请求失败:', err);
-    throw err; // 抛到 endDrillScene 的 catch，由那里恢复 UI
-  }
-  const rawText = data.choices?.[0]?.message?.content?.trim() || '';
-  let result;
-  try {
-    const jsonMatch = rawText.match(/\{[\s\S]*\}/);
-    result = JSON.parse(jsonMatch ? jsonMatch[0] : rawText);
-  } catch (e) {
-    console.warn('AI评分JSON解析失败，原始返回:', rawText);
-    result = { score: 60, process: 18, accuracy: 16, rapport: 17, coverage: 9, feedback: 'AI 评分解析出现问题，已给予基础分数。建议重做以获得准确评分。', strengths: ['完成了对话'], improvements: ['可再详细一些'] };
-  }
-  const score = Math.min(Math.max(result.score || 0, 0), 100);
-  drillSceneScores[drillCurrentScene] = score;
-  const passed = score >= DRILL_PASS_SCORE;
-  if (passed && !drillSceneDone[drillCurrentScene]) {
-    drillSceneDone[drillCurrentScene] = true;
-    if (typeof showToast === 'function') showToast('🎉 第' + (drillCurrentScene+1) + '关通过！得分 ' + score + ' 分', 'success');
-  } else if (!passed) {
-    if (typeof showToast === 'function') showToast('本关得分 ' + score + ' 分，未达 ' + DRILL_PASS_SCORE + ' 分，可重做本关', 'warning');
-  }
-  renderDrillSceneFeedback(result, score, passed);
-  updateDrillUI();
-  if (typeof saveProgress === 'function') saveProgress();
-}
-
-function renderDrillSceneFeedback(result, score, passed) {
-  const content = document.getElementById('drillInputRow');
-  if (content) content.style.display = 'none';
-  const scene = drillScenes[drillCurrentScene];
-  const label = scene.type === 'opening' ? '开场白' : '异议处理 · ' + scene.objectionType;
-  const scoreClass = score >= 80 ? 'high' : score >= 70 ? 'medium' : 'low';
-  const scoreLabel = score >= 80 ? '优秀' : score >= 70 ? '通过' : '未通过';
-  const html = `
-    <div class="score-display"><div class="score-circle ${scoreClass}" style="width:80px;height:80px;font-size:32px;">${score}</div><p style="margin-top:8px;font-size:16px;font-weight:700;">${scoreLabel}（满分100分）· 本关：${label}</p><p style="font-size:13px;color:var(--text-secondary);margin-top:4px;">${passed ? '✅ 本关已通过！' : '❌ 未达 ' + DRILL_PASS_SCORE + ' 分，点击「重做本关」重新练习'}</p></div>
-    <div class="eval-dimensions" style="margin-top:20px;">
-      <div class="eval-dim"><h4>流程规范</h4><p style="font-size:24px;font-weight:800;color:var(--primary);">${result.process||0}<span style="font-size:14px;color:var(--text-secondary);">/${scene.type==='opening'?40:30}</span></p></div>
-      <div class="eval-dim"><h4>要点准确</h4><p style="font-size:24px;font-weight:800;color:var(--primary);">${result.accuracy||0}<span style="font-size:14px;color:var(--text-secondary);">/30</span></p></div>
-      <div class="eval-dim"><h4>亲和力</h4><p style="font-size:24px;font-weight:800;color:var(--primary);">${result.rapport||0}<span style="font-size:14px;color:var(--text-secondary);">/30</span></p></div>
-      ${scene.type !== 'opening' ? `<div class="eval-dim"><h4>覆盖度</h4><p style="font-size:24px;font-weight:800;color:var(--accent);">${result.coverage||0}<span style="font-size:14px;color:var(--text-secondary);">/10</span></p></div>` : ''}
-    </div>
-    <div style="margin-top:16px;font-size:13px;color:var(--text-secondary);">📝 共 ${drillExchangeCount} 轮对话</div>
-    <div style="margin-top:16px;padding:16px;background:#f8fafc;border-radius:10px;border-left:4px solid var(--primary);"><strong>📋 AI 评语：</strong><p style="margin-top:6px;line-height:1.8;">${result.feedback || ''}</p>
-      ${(result.strengths && result.strengths.length) ? `<p style="margin-top:10px;"><strong>✅ 优点：</strong>${result.strengths.map(s=>`<span style="display:inline-block;background:#dcfce7;padding:2px 8px;border-radius:4px;margin:2px 4px 2px 0;font-size:12px;">${s}</span>`).join('')}</p>` : ''}
-      ${(result.improvements && result.improvements.length) ? `<p style="margin-top:10px;"><strong>💡 改进方向：</strong>${result.improvements.map(s=>`<span style="display:inline-block;background:#fef3c7;padding:2px 8px;border-radius:4px;margin:2px 4px 2px 0;font-size:12px;">${s}</span>`).join('')}</p>` : ''}
-    </div>
-    <div style="margin-top:20px;padding-top:16px;border-top:2px dashed var(--border);text-align:center;">
-      <button class="btn" onclick="resetDrillScene()" style="min-width:180px;">🔄 重做本关</button>
-      ${drillSceneDone[drillCurrentScene] && drillCurrentScene < 5 ? `<button class="btn btn-success" onclick="switchDrillScene(${drillCurrentScene+1})" style="min-width:180px;margin-left:10px;">下一关 →</button>` : ''}
-    </div>`;
-  const fb = document.getElementById('drillFeedback');
-  if (fb) { fb.innerHTML = html; fb.style.display = 'block'; }
-}
-
-// 重做当前场景
 function resetDrillScene() {
-  drillSceneDone[drillCurrentScene] = false;
+  drillActive = false; drillRoundIdx = 0; drillPicks = [];
   drillSceneScores[drillCurrentScene] = 0;
-  drillExchangeCount = 0;
-  drillConversation = [];
-  const input = document.getElementById('drillInput');
-  if (input) { input.value = ''; input.disabled = true; input.placeholder = '点击「开始练习」后输入你的话...'; }
-  document.getElementById('drillStartBtn').style.display = '';
-  document.getElementById('drillSendBtn').style.display = 'none';
-  document.getElementById('drillEndBtn').style.display = 'none';
-  const content = document.getElementById('drillInputRow');
-  if (content) content.style.display = '';
-  const fb = document.getElementById('drillFeedback');
-  if (fb) { fb.innerHTML = ''; fb.style.display = 'none'; }
-  const chat = document.getElementById('drillChatArea');
-  if (chat) chat.innerHTML = `<div style="text-align:center;color:var(--text-secondary);padding:20px;font-size:13px;">👇 点击「开始练习」重新进入本关：${drillScenes[drillCurrentScene].label}</div>`;
-  updateDrillUI();
-  if (typeof saveProgress === 'function') saveProgress();
-  if (typeof showToast === 'function') showToast('已重置本关，可以重新练习', 'info');
+  drillSceneDone[drillCurrentScene] = false;
+  drillAssessmentSubmitted = false; drillAssessmentScore = 0;
+  saveProgress(); updateDrillUI();
 }
-
-// 切换场景（仅已解锁）
 function switchDrillScene(idx) {
-  if (idx < 0 || idx > 5) return;
-  if (idx > 0 && !drillSceneDone[idx-1]) {
-    if (typeof showToast === 'function') showToast('🔒 请先完成第' + idx + '关（' + drillScenes[idx-1].label + '）', 'warning');
-    return;
-  }
-  drillCurrentScene = idx;
-  drillExchangeCount = 0;
-  drillConversation = [];
-  const input = document.getElementById('drillInput');
-  if (input) { input.value = ''; input.disabled = true; input.placeholder = '点击「开始练习」后输入你的话...'; }
-  document.getElementById('drillStartBtn').style.display = '';
-  document.getElementById('drillSendBtn').style.display = 'none';
-  document.getElementById('drillEndBtn').style.display = 'none';
-  const content = document.getElementById('drillInputRow');
-  if (content) content.style.display = '';
-  const fb = document.getElementById('drillFeedback');
-  if (fb) { fb.innerHTML = ''; fb.style.display = 'none'; }
-  const chat = document.getElementById('drillChatArea');
-  if (chat) chat.innerHTML = `<div style="text-align:center;color:var(--text-secondary);padding:20px;font-size:13px;">👇 点击「开始练习」进入：${drillScenes[idx].label}</div>`;
-  updateDrillUI();
-  if (typeof saveProgress === 'function') saveProgress();
+  drillCurrentScene = idx; drillActive = false; drillRoundIdx = 0; drillPicks = [];
+  saveProgress(); updateDrillUI();
 }
-
-// 提交全部对话记录进行综合考核评分
-async function submitDrillAssessment() {
-  if (!drillSceneDone.every(d => d)) {
-    if (typeof showToast === 'function') showToast('⚠️ 请先完成全部 6 关练习', 'warning');
-    return;
-  }
-  const btn = document.getElementById('drillSubmitBtn');
-  if (btn) { btn.disabled = true; btn.textContent = '⏳ AI 综合评分中...'; }
-  if (typeof showToast === 'function') showToast('📊 正在分析你全部 6 关的对话表现...', 'info');
-  try {
-    const allText = drillScenes.map((s, i) => {
-      const conv = (drillSceneConversations[i] || []).map(m => `${m.role === 'user' ? '🧑‍🏫 CC' : '👩 AI家长'}：${m.content}`).join('\n');
-      return `【第${i+1}关：${s.label}】\n${conv}`;
-    }).join('\n\n');
-    const evalMessages = [
-      { role: 'system', content: `你是VIP THINK培训机构的资深教学评审官，对CC学员在「开场白与异议处理」全部6个场景练习中的整体表现进行综合考核评分。
-
-【6个场景】
-1. 开场白：三步法（表明身份/来电目的/让家长感觉有帮助）
-2. 异议处理·没时间：理解+线上省时+40分钟+二选一
-3. 异议处理·小朋友不喜欢：理解+回顾初心+引导型老师
-4. 异议处理·报其他班了：不贬低+免费+108课纲贴合+检验效果
-5. 异议处理·没有领课：试听=测评课+全方位评估
-6. 异议处理·其他理由：尊重+零成本体验+体验后更有依据
-
-【评分标准】（满分100分）
-1. 流程规范性（30分）：各场景是否按「理解→价值→引导→坚持，不展开」执行
-2. 异议处理质量（30分）：五大拒绝理由是否逐一覆盖且化解到位
-3. 服务亲和力（30分）：语气、共情、不施压
-4. 话题覆盖度（10分）：是否覆盖必要话题
-
-【评分规则】
-- 70分为及格线
-- 对话质量 > 对话长度
-- 识别关键词而非字面对照
-- 具体指出优点和改进方向
-
-【输出格式要求 — 极其严格】
-必须且只能输出以下 JSON 格式，不要加任何其他文字、解释、markdown 标记：
-{"score":85,"process":25,"accuracy":25,"rapport":27,"coverage":8,"feedback":"整体评语","strengths":["优点1","优点2"],"improvements":["改进建议1","改进建议2"]}` },
-      { role: 'user', content: `以下是学员全部6个场景的对话记录，请进行综合评分：\n\n${allText}` }
-    ];
-    const data = await callDeepSeek({ messages: evalMessages, model: DEEPSEEK_MODEL, max_tokens: 500, temperature: 0.3 });
-    const rawText = data.choices?.[0]?.message?.content?.trim() || '';
-    let result;
-    try {
-      const jsonMatch = rawText.match(/\{[\s\S]*\}/);
-      result = JSON.parse(jsonMatch ? jsonMatch[0] : rawText);
-    } catch (e) {
-      console.warn('AI综合评分JSON解析失败，原始返回:', rawText);
-      result = { score: 60, process: 18, accuracy: 16, rapport: 17, coverage: 9, feedback: 'AI 综合评分解析出现问题，已给予基础分数。建议重新提交。', strengths: ['完成了全部练习'], improvements: ['可再详细一些'] };
-    }
-    drillAssessmentScore = Math.min(Math.max(result.score || 0, 0), 100);
-    drillAssessmentSubmitted = true;
-    renderDrillAssessment(result);
-    updateDrillUI();
-    updateSidebarLocks();
-    if (typeof saveProgress === 'function') saveProgress();
-    if (typeof showToast === 'function') showToast('综合考核得分：' + drillAssessmentScore + ' 分' + (drillIsPassed() ? '，已解锁下一章！' : '，未达标可重做后重新提交'), drillIsPassed() ? 'success' : 'warning');
-  } catch (err) {
-    console.error('综合评分失败:', err);
-    if (typeof showToast === 'function') showToast('❌ 综合评分失败：' + err.message + '，请重试', 'error');
-    if (btn) { btn.disabled = false; btn.textContent = '📤 提交对话记录进行综合考核'; }
-  }
+function computeOfflineAssessment() {
+  const sum = drillSceneScores.reduce(function(a, b){ return a + (b || 0); }, 0);
+  drillAssessmentScore = Math.round(sum / offlineDrillScenes.length);
+  drillAssessmentSubmitted = true;
 }
-
-function renderDrillAssessment(result) {
-  const area = document.getElementById('drillAssessmentArea');
-  if (!area) return;
-  const score = drillAssessmentScore;
+function renderOfflineAssessment() {
+  const area = document.getElementById('drillAssessmentArea'); if (!area) return;
   const pass = drillIsPassed();
-  const scoreClass = score >= 80 ? 'high' : score >= 70 ? 'medium' : 'low';
-  const scoreLabel = score >= 80 ? '优秀' : score >= 70 ? '通过' : '未通过';
-  area.innerHTML = `
-    <div class="score-display"><div class="score-circle ${scoreClass}" style="width:80px;height:80px;font-size:32px;">${score}</div><p style="margin-top:8px;font-size:16px;font-weight:700;">综合考核：${scoreLabel}（满分100分）</p><p style="font-size:13px;color:var(--text-secondary);margin-top:4px;">${pass ? '✅ 综合≥' + DRILL_PASS_SCORE + '分，第3章已解锁！' : '❌ 综合未达' + DRILL_PASS_SCORE + '分，可重做关卡后重新提交'}</p></div>
-    <div class="eval-dimensions" style="margin-top:20px;">
-      <div class="eval-dim"><h4>流程规范</h4><p style="font-size:24px;font-weight:800;color:var(--primary);">${result.process||0}<span style="font-size:14px;color:var(--text-secondary);">/30</span></p></div>
-      <div class="eval-dim"><h4>异议处理</h4><p style="font-size:24px;font-weight:800;color:var(--primary);">${result.accuracy||0}<span style="font-size:14px;color:var(--text-secondary);">/30</span></p></div>
-      <div class="eval-dim"><h4>亲和力</h4><p style="font-size:24px;font-weight:800;color:var(--primary);">${result.rapport||0}<span style="font-size:14px;color:var(--text-secondary);">/30</span></p></div>
-      <div class="eval-dim"><h4>覆盖度</h4><p style="font-size:24px;font-weight:800;color:var(--accent);">${result.coverage||0}<span style="font-size:14px;color:var(--text-secondary);">/10</span></p></div>
-    </div>
-    <div style="margin-top:16px;padding:16px;background:#f8fafc;border-radius:10px;border-left:4px solid var(--primary);"><strong>📋 AI 评语：</strong><p style="margin-top:6px;line-height:1.8;">${result.feedback || ''}</p>
-      ${(result.strengths && result.strengths.length) ? `<p style="margin-top:10px;"><strong>✅ 优点：</strong>${result.strengths.map(s=>`<span style="display:inline-block;background:#dcfce7;padding:2px 8px;border-radius:4px;margin:2px 4px 2px 0;font-size:12px;">${s}</span>`).join('')}</p>` : ''}
-      ${(result.improvements && result.improvements.length) ? `<p style="margin-top:10px;"><strong>💡 改进方向：</strong>${result.improvements.map(s=>`<span style="display:inline-block;background:#fef3c7;padding:2px 8px;border-radius:4px;margin:2px 4px 2px 0;font-size:12px;">${s}</span>`).join('')}</p>` : ''}
-    </div>
-    <div style="margin-top:20px;text-align:center;"><button class="btn" onclick="resetDrillScene()" style="min-width:180px;">🔄 重做关卡后重新提交</button></div>`;
+  const detail = offlineDrillScenes.map(function(s, i){
+    return '<span style="display:inline-block;background:' + (drillSceneDone[i] ? '#dcfce7' : '#fee2e2') + ';padding:4px 10px;border-radius:6px;margin:3px 4px 3px 0;font-size:12px;">第' + (i+1) + '关 ' + (drillSceneScores[i] || 0) + '分</span>';
+  }).join('');
+  area.innerHTML = '<p style="font-size:15px;font-weight:700;color:' + (pass ? '#065f46' : '#991b1b') + ';">📊 综合考核（6关平均）：' + drillAssessmentScore + ' 分（' + (pass ? '✅ 通过，第3章已解锁！' : '❌ 未达标（需≥' + DRILL_PASS_SCORE + '分）') + '）</p><div style="margin-top:8px;">' + detail + '</div><button class="btn btn-outline" onclick="resetDrillScene()" style="margin-top:10px;">🔄 重做当前关</button>';
 }
+function submitDrillAssessment() {
+  computeOfflineAssessment(); saveProgress(); renderOfflineAssessment();
+  if (typeof showToast === 'function') showToast('综合考核得分：' + drillAssessmentScore + ' 分' + (drillIsPassed() ? '，已解锁下一章！' : '，未达标可重做关卡'), drillIsPassed() ? 'success' : 'warning');
+}
+function endDrillScene() { /* 离线模式自动结算，无此操作 */ }
 
 // Keyboard// Keyboard
 function setupQuizListeners() {
